@@ -1,0 +1,116 @@
+/* section */
+.cta-section {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  padding: 8rem 1.5rem;
+}
+
+/* background effect */
+.cta-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta-bg-blur {
+  width: 120%;
+  height: 200%;
+  background: rgba(129, 236, 255, 0.05);
+  filter: blur(120px);
+  transform: rotate(12deg) translateY(25%);
+}
+
+/* content */
+.cta-content {
+  position: relative;
+  z-index: 1;
+  max-width: 64rem;
+  margin: 0 auto;
+}
+
+/* title */
+.cta-title {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  margin-bottom: 2rem;
+  line-height: 0.85;
+  color: var(--on-surface);
+}
+
+@media (min-width: 768px) {
+  .cta-title {
+    font-size: 5rem;
+  }
+}
+
+/* text */
+.cta-subtext {
+  color: var(--on-surface-variant);
+  font-size: 1.25rem;
+  margin-bottom: 3rem;
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* actions */
+.cta-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+@media (min-width: 640px) {
+  .cta-actions {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+/* primary button */
+.cta-primary {
+  background: linear-gradient(135deg, #00e3fd, #81ecff);
+  color: var(--on-primary-fixed);
+  padding: 1.25rem 3rem;
+  border-radius: 0.375rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 1.125rem;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 20px 60px rgba(0, 227, 253, 0.2);
+}
+
+.cta-primary:hover {
+  transform: scale(1.05);
+}
+
+/* secondary button */
+.cta-secondary {
+  background: none;
+  border: none;
+  color: var(--on-surface);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.cta-secondary:hover {
+  color: var(--ifm-color-primary);
+}
