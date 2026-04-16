@@ -1,0 +1,305 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #4BC8F1;
+  --ifm-color-primary-dark: #00d4ec;
+  --ifm-color-primary-darker: #277148;
+  --ifm-color-primary-darkest: #205d3b;
+  --ifm-color-primary-light: #33925d;
+  --ifm-color-primary-lighter: #359962;
+  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-code-font-size: 95%;
+  --ifm-heading-color: #000;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+
+  --surface-container-lowest: #000000;
+
+  /* primary text */
+  --on-surface: #1a1c22;
+  /* secondary text */
+  --on-surface-variant: #5f6370;
+
+  /* main surface */
+  --surface-container: #f5f7fb;
+  /* elevated cards */
+  --surface-container-high: #eef1f7;
+  /* base background */
+  --surface-container-low: #ffffff;
+
+  /* subtle contrast surface */
+  --surface-bright: #e6e9f0;
+
+  /* text on primary buttons */
+  --on-primary-fixed: #ffffff;
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #4BC8F1;
+  --ifm-color-primary-dark: #00d4ec;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+
+  --ifm-heading-color: #fff;
+
+  /* primary text */
+  --on-surface: #f0f0fd;
+  /* secondary text */
+  --on-surface-variant: #aaaab7;
+
+  /* main surface */
+  --surface-container: #171924;
+  /* elevated cards */
+  --surface-container-high: #1c1f2b;
+  /* base background */
+  --surface-container-low: #11131d;
+
+  /* subtle contrast surface */
+  --surface-bright: #282b3a;
+
+  /* text on primary buttons */
+  --on-primary-fixed: #003840;
+}
+
+.menu__link * {
+  padding: 1px;
+  overflow: auto !important;
+}
+
+footer {
+  .footer__col {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+.features {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.highlight {
+  color: var(--ifm-color-primary);
+}
+
+.bg-primary {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 800px;
+  height: 800px;
+  background: #0c0e17;
+  border-radius: 50%;
+  filter: blur(120px);
+  transform: translate(25%, -50%);
+}
+
+.bg-secondary {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 600px;
+  height: 600px;
+  background: rgba(63, 255, 139, 0.1);
+  border-radius: 50%;
+  filter: blur(100px);
+  transform: translate(-25%, 33%);
+}
+
+/* section */
+.eng-section {
+  padding: 6rem 1.5rem;
+  background: var(--surface-container-low);
+}
+
+@media (min-width: 768px) {
+  .eng-section {
+    padding: 6rem 6rem;
+  }
+}
+
+.eng2-section {
+  padding: 6rem 1.5rem;
+  background: var(--surface-container-high);
+}
+
+@media (min-width: 768px) {
+  .eng2-section {
+    padding: 6rem 6rem;
+  }
+}
+
+/* header */
+.eng-header {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .eng-header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
+
+.eng-title {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+.eng-subtext {
+  color: var(--on-surface-variant);
+  font-size: 1.125rem;
+  max-width: 32rem;
+}
+
+/* grid */
+.eng-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .eng-grid {
+    grid-template-columns: repeat(12, 1fr);
+  }
+}
+
+/* cards */
+.card {
+  padding: 2rem;
+  border-radius: 0.75rem;
+  border: 1px solid rgba(70, 71, 82, 0.1);
+  background: var(--surface-container);
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.2s ease;
+}
+
+.card:hover {
+  border-color: rgba(129, 236, 255, 0.3);
+}
+
+.card-large {
+  grid-column: span 8;
+}
+
+.surface-bright {
+  background: var(--surface-bright);
+  grid-column: span 4;
+}
+
+.surface-high {
+  background: var(--surface-container-high);
+  grid-column: span 4;
+}
+
+/* content */
+.card-content {
+  position: relative;
+  z-index: 1;
+}
+
+.card h3 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.card p {
+  color: var(--on-surface-variant);
+  max-width: 24rem;
+}
+
+/* glow */
+.card-glow {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 16rem;
+  height: 16rem;
+  border-radius: 50%;
+  filter: blur(48px);
+  background: rgba(129, 236, 255, 0.05);
+  transition: background 0.2s ease;
+}
+
+.card:hover .card-glow {
+  background: rgba(129, 236, 255, 0.1);
+}
+
+/* visual */
+.visual {
+  grid-column: span 8;
+  display: flex;
+  /* align-items: center; */
+  background: var(--background);
+}
+
+.visual-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.2;
+}
+
+.visual-content {
+  position: relative;
+  z-index: 1;
+  max-width: 20rem;
+}
+
+.visual-content h3 {
+  font-size: 1.75rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+
+.visual-content p {
+  font-size: 0.875rem;
+  margin-bottom: 1.5rem;
+  color: var(--on-surface-variant);
+}
+
+.visual-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--ifm-color-primary);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 0.75rem;
+}
+
+.visual-link:hover .small {
+  transform: translateX(4px);
+}
+
+.eng-body {
+  color: var(--on-surface-variant);
+  margin-bottom: 1.2rem; /* or 1.5rem for more breathing room */
+  line-height: 1.6;
+}
