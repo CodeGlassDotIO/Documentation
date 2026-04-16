@@ -1,0 +1,23 @@
+{
+  "id": "concepts-and-features/datasources",
+  "title": "Data Sources",
+  "description": "CodeGlass groups all data collected for a single instance in something called a data source. A data source can be seen as a self contained container containing profiling data. Every application instance has at least 1 data source. This is the main data source.",
+  "source": "@site/docs/concepts-and-features/datasources.md",
+  "sourceDirName": "concepts-and-features",
+  "slug": "/concepts-and-features/datasources",
+  "permalink": "/docs/concepts-and-features/datasources",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Context Menus",
+    "permalink": "/docs/concepts-and-features/context-menus"
+  },
+  "next": {
+    "title": "Dump Files",
+    "permalink": "/docs/concepts-and-features/dumpfiles"
+  }
+}

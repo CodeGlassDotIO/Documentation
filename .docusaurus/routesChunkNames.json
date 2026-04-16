@@ -1,0 +1,200 @@
+{
+  "/contact-a03": {
+    "__comp": "8b3a140c",
+    "__context": {
+      "plugin": "a7456010"
+    },
+    "config": "5e9f5e1a"
+  },
+  "/license-bdc": {
+    "__comp": "db34d6b0",
+    "__context": {
+      "plugin": "a7456010"
+    },
+    "config": "5e9f5e1a"
+  },
+  "/docs-bf1": {
+    "__comp": "5e95c892",
+    "__context": {
+      "plugin": "aba21aa0"
+    }
+  },
+  "/docs-01e": {
+    "__comp": "a7bd4aaa",
+    "__props": "0058b4c6"
+  },
+  "/docs-f9b": {
+    "__comp": "a94703ab"
+  },
+  "/docs/about-97c": {
+    "__comp": "17896441",
+    "content": "3d8d21df"
+  },
+  "/docs/category/application-instance-212": {
+    "__comp": "14eb3368",
+    "__props": "a45c9405"
+  },
+  "/docs/category/concepts--features-76a": {
+    "__comp": "14eb3368",
+    "__props": "8df4a726"
+  },
+  "/docs/category/getting-started-4e8": {
+    "__comp": "14eb3368",
+    "__props": "c260b502"
+  },
+  "/docs/category/how-to-16d": {
+    "__comp": "14eb3368",
+    "__props": "53210997"
+  },
+  "/docs/category/start-menu-a6c": {
+    "__comp": "14eb3368",
+    "__props": "7b51a45e"
+  },
+  "/docs/category/supported-languages-412": {
+    "__comp": "14eb3368",
+    "__props": "ae153f03"
+  },
+  "/docs/category/views-c93": {
+    "__comp": "14eb3368",
+    "__props": "417069f5"
+  },
+  "/docs/concepts-and-features/code-path-dcc": {
+    "__comp": "17896441",
+    "content": "884eb932"
+  },
+  "/docs/concepts-and-features/context-menus-894": {
+    "__comp": "17896441",
+    "content": "17615dba"
+  },
+  "/docs/concepts-and-features/datasources-7f2": {
+    "__comp": "17896441",
+    "content": "2f376113"
+  },
+  "/docs/concepts-and-features/dumpfiles-824": {
+    "__comp": "17896441",
+    "content": "2b1cd612"
+  },
+  "/docs/concepts-and-features/filters-a0e": {
+    "__comp": "17896441",
+    "content": "48e42bc8"
+  },
+  "/docs/concepts-and-features/julia-type-severity-0f5": {
+    "__comp": "17896441",
+    "content": "71bceb83"
+  },
+  "/docs/concepts-and-features/pause-data-collection-165": {
+    "__comp": "17896441",
+    "content": "47b54fe1"
+  },
+  "/docs/contact-0a7": {
+    "__comp": "17896441",
+    "content": "32dd35a8"
+  },
+  "/docs/getting-started/linux-4bd": {
+    "__comp": "17896441",
+    "content": "117bfa6c"
+  },
+  "/docs/getting-started/macos-3c7": {
+    "__comp": "17896441",
+    "content": "c80eb16a"
+  },
+  "/docs/getting-started/windows-533": {
+    "__comp": "17896441",
+    "content": "6806139d"
+  },
+  "/docs/how-to/implicit-conversions-e4d": {
+    "__comp": "17896441",
+    "content": "d20a3021"
+  },
+  "/docs/how-to/inefficient-array-types-b59": {
+    "__comp": "17896441",
+    "content": "d67ab4f9"
+  },
+  "/docs/intro-61d": {
+    "__comp": "17896441",
+    "content": "0e384e19"
+  },
+  "/docs/languages/julia-40a": {
+    "__comp": "17896441",
+    "content": "019d343e"
+  },
+  "/docs/license-773": {
+    "__comp": "17896441",
+    "content": "ac5280f2"
+  },
+  "/docs/privacy-45b": {
+    "__comp": "17896441",
+    "content": "9b4185c1"
+  },
+  "/docs/views/app-instance/application-explorer-820": {
+    "__comp": "17896441",
+    "content": "4a524824"
+  },
+  "/docs/views/app-instance/application-instance-f8c": {
+    "__comp": "17896441",
+    "content": "9ecff0f8"
+  },
+  "/docs/views/app-instance/codemember-5bc": {
+    "__comp": "17896441",
+    "content": "f20fc54d"
+  },
+  "/docs/views/app-instance/exceptions-622": {
+    "__comp": "17896441",
+    "content": "08d6f7c6"
+  },
+  "/docs/views/app-instance/garbage-collections-5dc": {
+    "__comp": "17896441",
+    "content": "0984d23e"
+  },
+  "/docs/views/app-instance/heat-map-e72": {
+    "__comp": "17896441",
+    "content": "d72eebd7"
+  },
+  "/docs/views/app-instance/mem-object-allocator-statistics-4dd": {
+    "__comp": "17896441",
+    "content": "4e9acfc0"
+  },
+  "/docs/views/app-instance/memory-statistics-bb4": {
+    "__comp": "17896441",
+    "content": "860c3307"
+  },
+  "/docs/views/app-instance/performance-053": {
+    "__comp": "17896441",
+    "content": "cedd2c0e"
+  },
+  "/docs/views/app-instance/statistics-7ac": {
+    "__comp": "17896441",
+    "content": "7e07059e"
+  },
+  "/docs/views/app-instance/task-explorer-233": {
+    "__comp": "17896441",
+    "content": "e70c5fe4"
+  },
+  "/docs/views/general/application-list-56b": {
+    "__comp": "17896441",
+    "content": "ada44b93"
+  },
+  "/docs/views/general/instance-list-fd9": {
+    "__comp": "17896441",
+    "content": "1184db49"
+  },
+  "/docs/views/general/login-3e6": {
+    "__comp": "17896441",
+    "content": "cea84b9a"
+  },
+  "/docs/views/general/register-e01": {
+    "__comp": "17896441",
+    "content": "a8b676d3"
+  },
+  "/docs/views/general/settings-6f0": {
+    "__comp": "17896441",
+    "content": "e4eb923d"
+  },
+  "/-e5f": {
+    "__comp": "1df93b7f",
+    "__context": {
+      "plugin": "a7456010"
+    },
+    "config": "5e9f5e1a"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "views/app-instance/mem-object-allocator-statistics",
+  "title": "Memory Object Allocator Statistics",
+  "description": "The memory object allocator screen show information about all the functions that allocated an object",
+  "source": "@site/docs/views/app-instance/mem-object-allocator-statistics.md",
+  "sourceDirName": "views/app-instance",
+  "slug": "/views/app-instance/mem-object-allocator-statistics",
+  "permalink": "/docs/views/app-instance/mem-object-allocator-statistics",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "description": "The memory object allocator screen show information about all the functions that allocated an object"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Heat Map",
+    "permalink": "/docs/views/app-instance/heat-map"
+  },
+  "next": {
+    "title": "Memory Statistics",
+    "permalink": "/docs/views/app-instance/memory-statistics"
+  }
+}

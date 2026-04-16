@@ -1,0 +1,25 @@
+{
+  "id": "views/app-instance/application-explorer",
+  "title": "Application Explorer",
+  "description": "The application explorer shows all the functions that have been loaded in your application",
+  "source": "@site/docs/views/app-instance/application-explorer.md",
+  "sourceDirName": "views/app-instance",
+  "slug": "/views/app-instance/application-explorer",
+  "permalink": "/docs/views/app-instance/application-explorer",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "description": "The application explorer shows all the functions that have been loaded in your application"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Application Instance",
+    "permalink": "/docs/views/app-instance/application-instance"
+  },
+  "next": {
+    "title": "Code Member",
+    "permalink": "/docs/views/app-instance/codemember"
+  }
+}

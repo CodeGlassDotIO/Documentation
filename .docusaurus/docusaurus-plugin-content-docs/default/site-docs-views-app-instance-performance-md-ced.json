@@ -1,0 +1,25 @@
+{
+  "id": "views/app-instance/performance",
+  "title": "Performance",
+  "description": "The performance screen show how runtime events are distributed over time",
+  "source": "@site/docs/views/app-instance/performance.md",
+  "sourceDirName": "views/app-instance",
+  "slug": "/views/app-instance/performance",
+  "permalink": "/docs/views/app-instance/performance",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "description": "The performance screen show how runtime events are distributed over time"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Memory Statistics",
+    "permalink": "/docs/views/app-instance/memory-statistics"
+  },
+  "next": {
+    "title": "Statistics",
+    "permalink": "/docs/views/app-instance/statistics"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "concepts-and-features/filters",
+  "title": "Filters",
+  "description": "The goal of filters is to allow the user to specify which functions CodeGlass should profile.",
+  "source": "@site/docs/concepts-and-features/filters.md",
+  "sourceDirName": "concepts-and-features",
+  "slug": "/concepts-and-features/filters",
+  "permalink": "/docs/concepts-and-features/filters",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Dump Files",
+    "permalink": "/docs/concepts-and-features/dumpfiles"
+  },
+  "next": {
+    "title": "Julia Type Severity",
+    "permalink": "/docs/concepts-and-features/julia-type-severity"
+  }
+}

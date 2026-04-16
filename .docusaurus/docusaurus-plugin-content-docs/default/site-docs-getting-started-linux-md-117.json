@@ -1,0 +1,27 @@
+{
+  "id": "getting-started/linux",
+  "title": "Linux",
+  "description": "Setup guide for Linux machines",
+  "source": "@site/docs/getting-started/linux.md",
+  "sourceDirName": "getting-started",
+  "slug": "/getting-started/linux",
+  "permalink": "/docs/getting-started/linux",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2,
+    "description": "Setup guide for Linux machines"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Windows",
+    "permalink": "/docs/getting-started/windows"
+  },
+  "next": {
+    "title": "macOS",
+    "permalink": "/docs/getting-started/macos"
+  }
+}

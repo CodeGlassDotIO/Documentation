@@ -1,0 +1,25 @@
+{
+  "id": "views/app-instance/exceptions",
+  "title": "Exceptions",
+  "description": "The exception explorer shows all exceptions that happened in your application",
+  "source": "@site/docs/views/app-instance/exceptions.md",
+  "sourceDirName": "views/app-instance",
+  "slug": "/views/app-instance/exceptions",
+  "permalink": "/docs/views/app-instance/exceptions",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "description": "The exception explorer shows all exceptions that happened in your application"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Code Member",
+    "permalink": "/docs/views/app-instance/codemember"
+  },
+  "next": {
+    "title": "Garbage Collections",
+    "permalink": "/docs/views/app-instance/garbage-collections"
+  }
+}

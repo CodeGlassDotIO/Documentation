@@ -1,0 +1,25 @@
+{
+  "id": "views/app-instance/statistics",
+  "title": "Statistics",
+  "description": "The statistics screen show statistics for every function",
+  "source": "@site/docs/views/app-instance/statistics.md",
+  "sourceDirName": "views/app-instance",
+  "slug": "/views/app-instance/statistics",
+  "permalink": "/docs/views/app-instance/statistics",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "description": "The statistics screen show statistics for every function"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Performance",
+    "permalink": "/docs/views/app-instance/performance"
+  },
+  "next": {
+    "title": "Task Explorer",
+    "permalink": "/docs/views/app-instance/task-explorer"
+  }
+}

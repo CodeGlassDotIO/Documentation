@@ -1,0 +1,27 @@
+{
+  "id": "views/general/instance-list",
+  "title": "Instance List",
+  "description": "The screen where CodeGlass shows all the instances that are part of an application",
+  "source": "@site/docs/views/general/instance-list.md",
+  "sourceDirName": "views/general",
+  "slug": "/views/general/instance-list",
+  "permalink": "/docs/views/general/instance-list",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3,
+    "description": "The screen where CodeGlass shows all the instances that are part of an application"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Application List",
+    "permalink": "/docs/views/general/application-list"
+  },
+  "next": {
+    "title": "Settings",
+    "permalink": "/docs/views/general/settings"
+  }
+}

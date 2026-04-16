@@ -1,0 +1,25 @@
+{
+  "id": "views/app-instance/garbage-collections",
+  "title": "Garbage Collections",
+  "description": "The garbage collection screens show every garbage collection that has happened",
+  "source": "@site/docs/views/app-instance/garbage-collections.md",
+  "sourceDirName": "views/app-instance",
+  "slug": "/views/app-instance/garbage-collections",
+  "permalink": "/docs/views/app-instance/garbage-collections",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "description": "The garbage collection screens show every garbage collection that has happened"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Exceptions",
+    "permalink": "/docs/views/app-instance/exceptions"
+  },
+  "next": {
+    "title": "Heat Map",
+    "permalink": "/docs/views/app-instance/heat-map"
+  }
+}

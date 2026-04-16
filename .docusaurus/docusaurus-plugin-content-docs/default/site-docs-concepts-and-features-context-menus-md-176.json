@@ -1,0 +1,23 @@
+{
+  "id": "concepts-and-features/context-menus",
+  "title": "Context Menus",
+  "description": "In the CodeGlass Client there are a lot of places where Code Members and Memory Objects are shown.",
+  "source": "@site/docs/concepts-and-features/context-menus.md",
+  "sourceDirName": "concepts-and-features",
+  "slug": "/concepts-and-features/context-menus",
+  "permalink": "/docs/concepts-and-features/context-menus",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Code Paths",
+    "permalink": "/docs/concepts-and-features/code-path"
+  },
+  "next": {
+    "title": "Data Sources",
+    "permalink": "/docs/concepts-and-features/datasources"
+  }
+}

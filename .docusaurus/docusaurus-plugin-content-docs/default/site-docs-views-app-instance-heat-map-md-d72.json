@@ -1,0 +1,25 @@
+{
+  "id": "views/app-instance/heat-map",
+  "title": "Heat Map",
+  "description": "The heat map gives a visual representation of hot spots in your application",
+  "source": "@site/docs/views/app-instance/heat-map.md",
+  "sourceDirName": "views/app-instance",
+  "slug": "/views/app-instance/heat-map",
+  "permalink": "/docs/views/app-instance/heat-map",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "description": "The heat map gives a visual representation of hot spots in your application"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Garbage Collections",
+    "permalink": "/docs/views/app-instance/garbage-collections"
+  },
+  "next": {
+    "title": "Memory Object Allocator Statistics",
+    "permalink": "/docs/views/app-instance/mem-object-allocator-statistics"
+  }
+}

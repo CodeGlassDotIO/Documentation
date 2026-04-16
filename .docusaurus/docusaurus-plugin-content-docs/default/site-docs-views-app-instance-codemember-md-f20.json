@@ -1,0 +1,25 @@
+{
+  "id": "views/app-instance/codemember",
+  "title": "Code Member",
+  "description": "The code member screen shows all the relevant information regarding a specific function",
+  "source": "@site/docs/views/app-instance/codemember.md",
+  "sourceDirName": "views/app-instance",
+  "slug": "/views/app-instance/codemember",
+  "permalink": "/docs/views/app-instance/codemember",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "description": "The code member screen shows all the relevant information regarding a specific function"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Application Explorer",
+    "permalink": "/docs/views/app-instance/application-explorer"
+  },
+  "next": {
+    "title": "Exceptions",
+    "permalink": "/docs/views/app-instance/exceptions"
+  }
+}

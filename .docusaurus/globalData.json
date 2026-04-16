@@ -1,0 +1,233 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/docs",
+          "mainDocId": "intro",
+          "docs": [
+            {
+              "id": "about",
+              "path": "/docs/about",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "concepts-and-features/code-path",
+              "path": "/docs/concepts-and-features/code-path",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "concepts-and-features/context-menus",
+              "path": "/docs/concepts-and-features/context-menus",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "concepts-and-features/datasources",
+              "path": "/docs/concepts-and-features/datasources",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "concepts-and-features/dumpfiles",
+              "path": "/docs/concepts-and-features/dumpfiles",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "concepts-and-features/filters",
+              "path": "/docs/concepts-and-features/filters",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "concepts-and-features/julia-type-severity",
+              "path": "/docs/concepts-and-features/julia-type-severity",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "concepts-and-features/pause-data-collection",
+              "path": "/docs/concepts-and-features/pause-data-collection",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "contact",
+              "path": "/docs/contact",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "getting-started/linux",
+              "path": "/docs/getting-started/linux",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "getting-started/macos",
+              "path": "/docs/getting-started/macos",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "getting-started/windows",
+              "path": "/docs/getting-started/windows",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "how-to/implicit-conversions",
+              "path": "/docs/how-to/implicit-conversions",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "how-to/inefficient-array-types",
+              "path": "/docs/how-to/inefficient-array-types",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "intro",
+              "path": "/docs/intro",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "languages/julia",
+              "path": "/docs/languages/julia",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "license",
+              "path": "/docs/license",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "privacy",
+              "path": "/docs/privacy",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "views/app-instance/application-explorer",
+              "path": "/docs/views/app-instance/application-explorer",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "views/app-instance/application-instance",
+              "path": "/docs/views/app-instance/application-instance",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "views/app-instance/codemember",
+              "path": "/docs/views/app-instance/codemember",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "views/app-instance/exceptions",
+              "path": "/docs/views/app-instance/exceptions",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "views/app-instance/garbage-collections",
+              "path": "/docs/views/app-instance/garbage-collections",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "views/app-instance/heat-map",
+              "path": "/docs/views/app-instance/heat-map",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "views/app-instance/mem-object-allocator-statistics",
+              "path": "/docs/views/app-instance/mem-object-allocator-statistics",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "views/app-instance/memory-statistics",
+              "path": "/docs/views/app-instance/memory-statistics",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "views/app-instance/performance",
+              "path": "/docs/views/app-instance/performance",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "views/app-instance/statistics",
+              "path": "/docs/views/app-instance/statistics",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "views/app-instance/task-explorer",
+              "path": "/docs/views/app-instance/task-explorer",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "views/general/application-list",
+              "path": "/docs/views/general/application-list",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "views/general/instance-list",
+              "path": "/docs/views/general/instance-list",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "views/general/login",
+              "path": "/docs/views/general/login",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "views/general/register",
+              "path": "/docs/views/general/register",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "views/general/settings",
+              "path": "/docs/views/general/settings",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/getting-started",
+              "path": "/docs/category/getting-started",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/views",
+              "path": "/docs/category/views",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/start-menu",
+              "path": "/docs/category/start-menu",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/application-instance",
+              "path": "/docs/category/application-instance",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/supported-languages",
+              "path": "/docs/category/supported-languages",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/how-to",
+              "path": "/docs/category/how-to",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/concepts--features",
+              "path": "/docs/category/concepts--features",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/docs/intro",
+                "label": "intro"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

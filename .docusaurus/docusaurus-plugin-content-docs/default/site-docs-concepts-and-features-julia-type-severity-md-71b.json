@@ -1,0 +1,23 @@
+{
+  "id": "concepts-and-features/julia-type-severity",
+  "title": "Julia Type Severity",
+  "description": "In Julia you usually do not need to declare types for every value. The compiler tries to infer types based on how values are used in the code. In many cases this works well and results in efficient compiled code.",
+  "source": "@site/docs/concepts-and-features/julia-type-severity.md",
+  "sourceDirName": "concepts-and-features",
+  "slug": "/concepts-and-features/julia-type-severity",
+  "permalink": "/docs/concepts-and-features/julia-type-severity",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Filters",
+    "permalink": "/docs/concepts-and-features/filters"
+  },
+  "next": {
+    "title": "Pause Data Collection",
+    "permalink": "/docs/concepts-and-features/pause-data-collection"
+  }
+}

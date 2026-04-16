@@ -1,0 +1,23 @@
+{
+  "id": "concepts-and-features/pause-data-collection",
+  "title": "Pause Data Collection",
+  "description": "CodeGlass works by adding and listening to callbacks that are added during compile time. This allows CodeGlass to efficiently get informed about events that happen in the code, like a function call or a memory allocation.",
+  "source": "@site/docs/concepts-and-features/pause-data-collection.md",
+  "sourceDirName": "concepts-and-features",
+  "slug": "/concepts-and-features/pause-data-collection",
+  "permalink": "/docs/concepts-and-features/pause-data-collection",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Julia Type Severity",
+    "permalink": "/docs/concepts-and-features/julia-type-severity"
+  },
+  "next": {
+    "title": "License",
+    "permalink": "/docs/license"
+  }
+}

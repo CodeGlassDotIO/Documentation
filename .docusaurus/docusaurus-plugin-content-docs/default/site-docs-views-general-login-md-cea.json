@@ -1,0 +1,27 @@
+{
+  "id": "views/general/login",
+  "title": "Login",
+  "description": "The CodeGlass client login screen",
+  "source": "@site/docs/views/general/login.md",
+  "sourceDirName": "views/general",
+  "slug": "/views/general/login",
+  "permalink": "/docs/views/general/login",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 0,
+  "frontMatter": {
+    "sidebar_position": 0,
+    "description": "The CodeGlass client login screen"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Start Menu",
+    "permalink": "/docs/category/start-menu"
+  },
+  "next": {
+    "title": "Register",
+    "permalink": "/docs/views/general/register"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "license",
+  "title": "License",
+  "description": "TODO",
+  "source": "@site/docs/license.md",
+  "sourceDirName": ".",
+  "slug": "/license",
+  "permalink": "/docs/license",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "sidebar_position": 7
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Pause Data Collection",
+    "permalink": "/docs/concepts-and-features/pause-data-collection"
+  },
+  "next": {
+    "title": "Contact",
+    "permalink": "/docs/contact"
+  }
+}

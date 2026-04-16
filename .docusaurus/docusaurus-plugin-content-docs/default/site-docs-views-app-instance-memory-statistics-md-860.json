@@ -1,0 +1,25 @@
+{
+  "id": "views/app-instance/memory-statistics",
+  "title": "Memory Statistics",
+  "description": "The memory statistics screen show information about all the allocated object types",
+  "source": "@site/docs/views/app-instance/memory-statistics.md",
+  "sourceDirName": "views/app-instance",
+  "slug": "/views/app-instance/memory-statistics",
+  "permalink": "/docs/views/app-instance/memory-statistics",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "description": "The memory statistics screen show information about all the allocated object types"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Memory Object Allocator Statistics",
+    "permalink": "/docs/views/app-instance/mem-object-allocator-statistics"
+  },
+  "next": {
+    "title": "Performance",
+    "permalink": "/docs/views/app-instance/performance"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "views/general/application-list",
+  "title": "Application List",
+  "description": "The screen where CodeGlass shows all the applications that have been added to CodeGlass",
+  "source": "@site/docs/views/general/application-list.md",
+  "sourceDirName": "views/general",
+  "slug": "/views/general/application-list",
+  "permalink": "/docs/views/general/application-list",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2,
+    "description": "The screen where CodeGlass shows all the applications that have been added to CodeGlass"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Register",
+    "permalink": "/docs/views/general/register"
+  },
+  "next": {
+    "title": "Instance List",
+    "permalink": "/docs/views/general/instance-list"
+  }
+}

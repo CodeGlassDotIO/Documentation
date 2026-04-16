@@ -1,0 +1,27 @@
+{
+  "id": "languages/julia",
+  "title": "Julia",
+  "description": "CodeGlass specifics for Julia",
+  "source": "@site/docs/languages/julia.md",
+  "sourceDirName": "languages",
+  "slug": "/languages/julia",
+  "permalink": "/docs/languages/julia",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1,
+    "description": "CodeGlass specifics for Julia"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Supported Languages",
+    "permalink": "/docs/category/supported-languages"
+  },
+  "next": {
+    "title": "How To",
+    "permalink": "/docs/category/how-to"
+  }
+}

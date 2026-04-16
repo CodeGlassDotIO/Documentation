@@ -1,0 +1,23 @@
+{
+  "id": "concepts-and-features/code-path",
+  "title": "Code Paths",
+  "description": "A lot of the detail you see in CodeGlass comes from something called code paths.",
+  "source": "@site/docs/concepts-and-features/code-path.md",
+  "sourceDirName": "concepts-and-features",
+  "slug": "/concepts-and-features/code-path",
+  "permalink": "/docs/concepts-and-features/code-path",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Concepts & Features",
+    "permalink": "/docs/category/concepts--features"
+  },
+  "next": {
+    "title": "Context Menus",
+    "permalink": "/docs/concepts-and-features/context-menus"
+  }
+}

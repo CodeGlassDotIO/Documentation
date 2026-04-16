@@ -1,0 +1,22 @@
+{
+  "id": "about",
+  "title": "About CodeGlass",
+  "description": "CodeGlass develops tools for inspecting and understanding the runtime behavior of applications. The current focus is on the CodeGlass for Julia program, where we work with teams using Julia to help improve the development tooling available in the ecosystem.",
+  "source": "@site/docs/about.md",
+  "sourceDirName": ".",
+  "slug": "/about",
+  "permalink": "/docs/about",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 10,
+  "frontMatter": {
+    "sidebar_position": 10
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Privacy",
+    "permalink": "/docs/privacy"
+  }
+}

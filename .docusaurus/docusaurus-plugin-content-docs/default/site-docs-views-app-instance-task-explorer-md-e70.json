@@ -1,0 +1,25 @@
+{
+  "id": "views/app-instance/task-explorer",
+  "title": "Task Explorer",
+  "description": "The task explorer shows every task that has been created in the application",
+  "source": "@site/docs/views/app-instance/task-explorer.md",
+  "sourceDirName": "views/app-instance",
+  "slug": "/views/app-instance/task-explorer",
+  "permalink": "/docs/views/app-instance/task-explorer",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "description": "The task explorer shows every task that has been created in the application"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Statistics",
+    "permalink": "/docs/views/app-instance/statistics"
+  },
+  "next": {
+    "title": "Supported Languages",
+    "permalink": "/docs/category/supported-languages"
+  }
+}

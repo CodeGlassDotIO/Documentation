@@ -1,0 +1,26 @@
+{
+  "id": "privacy",
+  "title": "Privacy",
+  "description": "CodeGlass is designed to collect as little personal information as possible.",
+  "source": "@site/docs/privacy.md",
+  "sourceDirName": ".",
+  "slug": "/privacy",
+  "permalink": "/docs/privacy",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 9,
+  "frontMatter": {
+    "sidebar_position": 9
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Contact",
+    "permalink": "/docs/contact"
+  },
+  "next": {
+    "title": "About CodeGlass",
+    "permalink": "/docs/about"
+  }
+}

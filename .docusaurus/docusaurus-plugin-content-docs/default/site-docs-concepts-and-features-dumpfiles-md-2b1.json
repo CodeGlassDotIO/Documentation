@@ -1,0 +1,23 @@
+{
+  "id": "concepts-and-features/dumpfiles",
+  "title": "Dump Files",
+  "description": "Sometimes you want to collect profiling data on a different device than that you want to analyze it, or you might want share your findings with a coworker. To make this process as simple as possible, CodeGlass allows users to export all their data to a CodeGlass dump file.",
+  "source": "@site/docs/concepts-and-features/dumpfiles.md",
+  "sourceDirName": "concepts-and-features",
+  "slug": "/concepts-and-features/dumpfiles",
+  "permalink": "/docs/concepts-and-features/dumpfiles",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Data Sources",
+    "permalink": "/docs/concepts-and-features/datasources"
+  },
+  "next": {
+    "title": "Filters",
+    "permalink": "/docs/concepts-and-features/filters"
+  }
+}
