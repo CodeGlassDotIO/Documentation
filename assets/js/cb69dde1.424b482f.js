@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcode_glass_docs=self.webpackChunkcode_glass_docs||[]).push([["9942"],{9236(e){e.exports=JSON.parse('{"metadata":{"permalink":"/documentation/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":0,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
