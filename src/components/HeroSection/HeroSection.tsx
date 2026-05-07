@@ -1,9 +1,10 @@
 import React from "react";
+import ThemedImage from '@theme/ThemedImage';
 import "./HeroSection.css";
 
 export const HeroSection: React.FC = () => {
     function downloadNowClick() {
-        window.open( "https://github.com/CodeGlassDotIO/CodeGlassDotIO")?.focus();
+        window.open( "https://github.com/CodeGlassDotIO/CodeGlass")?.focus();
     }
 
     function gotoDocsClick() {
@@ -29,18 +30,18 @@ export const HeroSection: React.FC = () => {
                     </p>
 
                     <div className="hero-actions">
-                        <a className="btn-primary" href="https://github.com/CodeGlassDotIO/CodeGlassDotIO" target="_blank">Download Trial</a>
+                        <a className="btn-primary" href="https://github.com/CodeGlassDotIO/CodeGlass" target="_blank">Download Trial</a>
                         <a className="btn-secondary" href="./docs/intro">Read the docs</a>
                     </div>
                 </div>
 
                 <div className="hero-media">
-                    <img
-                        alt="Kinetic Flame Chart Visualization"
-                        className="hero-img"
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCddBBUzny0h1hnkab637tMZcl8BYLZQ7vXKWSy_lnLviZSBUMvy-87v3VoohbVzuqDHTyrRo5rvyDU-7OoOWuIzbKBnrES6pZ_F9RA-hUValbXF9cvBxc96s57rZAV6D_AMSLttCWPxyLW6wguY42IIq7WJlzWQVt_d-lxRWkzlAedQaHbsuE0q74IMJETE2vr5XnulgHRNEeuZEzeGal_Grpj2nfMhQkdIzCrdMNBWfJXvwiCU7QhaGHhQRV_6bTpVTG0izOIodeR"
-                    />
-
+                    <ThemedImage className="hero-img"
+                      sources={{
+                            light: "./img/CodeGlassFullLogoLight.png",
+                            dark: "./img/CodeGlassFullLogo.png",
+                        }}>
+                    </ThemedImage>
                     <div className="hero-overlay" />
                 </div>
             </div>

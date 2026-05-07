@@ -36,6 +36,16 @@
 
   /* text on primary buttons */
   --on-primary-fixed: #ffffff;
+
+  --ifm-footer-title-color: var(--on-surface) !important;
+
+  .footer__title, .footer__link-item {
+    color: var(--on-surface);
+  }
+
+  footer {
+    background-color: var(--surface-container-high);
+  }
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -59,15 +69,23 @@
   /* main surface */
   --surface-container: #171924;
   /* elevated cards */
-  --surface-container-high: #1c1f2b;
+  --surface-container-high: #2c3e50;
   /* base background */
-  --surface-container-low: #11131d;
+  --surface-container-low: #1D2A34;
 
   /* subtle contrast surface */
   --surface-bright: #282b3a;
 
   /* text on primary buttons */
   --on-primary-fixed: #003840;
+
+  .navbar {
+    background-color: var(--surface-container-low);
+  }
+
+  footer {
+    background-color: var(--surface-container-high);
+  }
 }
 
 .menu__link * {
@@ -126,7 +144,7 @@ footer {
 
 @media (min-width: 768px) {
   .eng-section {
-    padding: 6rem 6rem;
+    padding: 4rem 8rem 3rem 8rem;
   }
 }
 
@@ -137,7 +155,7 @@ footer {
 
 @media (min-width: 768px) {
   .eng2-section {
-    padding: 6rem 6rem;
+    padding: 4rem 8rem 3rem 8rem;
   }
 }
 
@@ -302,4 +320,8 @@ footer {
   color: var(--on-surface-variant);
   margin-bottom: 1.2rem; /* or 1.5rem for more breathing room */
   line-height: 1.6;
+}
+
+.price-button {
+  padding-bottom: 2rem;
 }

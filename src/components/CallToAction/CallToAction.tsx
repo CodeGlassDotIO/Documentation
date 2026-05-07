@@ -19,7 +19,7 @@ export const CallToAction: React.FC = () => {
         </p>
 
         <div className="cta-actions">
-          <a className="cta-primary" href="contact">
+          <a className="btn-primary" href="contact">
             Contact us
           </a>
         </div>
