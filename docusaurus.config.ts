@@ -15,10 +15,10 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://codeglassdotio.github.io/', 
+  url: 'http://localhost:30340', 
   // Set the /<baseUrl>/ pathname under which your site is served (Make sure that it ends with '/', and that the name is not'docs' as it does not like that)
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/documentation/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -26,6 +26,7 @@ const config: Config = {
   projectName: 'CodeGlass', // Usually your repo name.
 
   onBrokenLinks: 'throw',
+  trailingSlash: false,
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -35,6 +36,34 @@ const config: Config = {
     locales: ['en'],
   },
   plugins: [
+    './plugins/case-sensitive-paths',
+    // [
+    //   'docusaurus-plugin-cookie-consent',
+    //   {
+    //     title: 'Cookie Consent',
+    //     description: 'We use cookies to enhance your browsing experience and analyze our traffic.',
+    //     links: [
+    //       { label: 'Privacy Policy', href: './docs/privacy' },
+    //     ],
+    //     categories: {
+    //       analytics: {
+    //         enabled: false
+    //       },
+    //       marketing: {
+    //         enabled: false
+    //       },
+    //       functional: {
+    //         enabled: false
+    //       }
+    //     }
+    //   },
+    // ],
+    // [
+    //   '@docusaurus/plugin-google-gtag',
+    //   {
+    //     trackingID: 'G-BT1911BCXX',
+    //   },
+    // ],
   ],
   presets: [
     [
@@ -42,6 +71,10 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
+          // Please change this to your repo.
+          // Remove this to remove the "edit this page" links.
+          // editUrl:
+          //   'https://github.com/CodeGlassDotIO/Documentation',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -52,7 +85,7 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    // image: 'img/docusaurus-social-card.jpg', // 
+    // image: 'img/docusaurus-social-card.jpg', // TODO: Replace
     colorMode: {
       respectPrefersColorScheme: true,
     },
@@ -81,8 +114,18 @@ const config: Config = {
           to: `/contact`,
         },
         {
-          href: 'https://github.com/CodeGlassDotIO/CodeGlassDotIO',
+          href: 'https://tooling.codeglass.io/',
+          label: '.NET and other Tools',
+          position: 'right',
+        },
+        {
+          href: 'https://github.com/CodeGlassDotIO/Documentation',
           label: 'GitHub',
+          position: 'right',
+        },
+        {
+          href: 'https://github.com/CodeGlassDotIO/CodeGlass',
+          label: 'Download',
           position: 'right',
         },
       ],
@@ -94,16 +137,12 @@ const config: Config = {
           title: 'CodeGlass',
           items: [
             {
-              label: 'About',
-              to: '/docs/about'
-            },
-            {
               label: 'Contact',
               href: '/contact',
             },
             {
               label: 'Privacy',
-              href: '/docs/privacy',
+              href: '/docs/legal/privacy',
             },
           ],
         },
@@ -121,7 +160,7 @@ const config: Config = {
           items: [
             {
               label: 'Discord',
-              href: 'https://discord.gg/ytczAxSmX4',
+              href: 'https://discord.com/invite/YWAcBSyBS8',
             },
             {
               label: 'Github',

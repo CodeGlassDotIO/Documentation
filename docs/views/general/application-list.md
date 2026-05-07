@@ -29,10 +29,15 @@ Currently limited to Julia, see [intro](../../intro) for more information.
 
 ![Add Application 1](./img/application-list/AddApplication1.png)
 
-After selecting the application type, enter a **name** for the application and press the **Create** button.  
-This will create the new application and add it to your application list.
+After selecting the application type, enter a **name** for the application.
 
 *If you have selected **Julia Project**, you will also have to enter the full path to the Project.toml.*
+
+After filling in a name for your application, you get the choose some basic settings for your application. 
+You can always change these later in the [application settings](./instance-list#settings).
+
+When you are done, you can press the **Create** button. This will create the new application and add it to your application list.
+
 
 ![Add Application 2](./img/application-list/AddApplication2.png)
 

@@ -4,7 +4,7 @@ All of these events are collected by the [agent](../intro#agent) and send to the
 
 To prevent slowing down your application on parts that you are less/not interested in, we allow you to pause data collection on certain parts of your code. 
 
-You can pause and continue data collection both through the [UI](../views/app-instance/application-instance#pause--continue-application) or through the [CodeGlass Julia Package](../languages/julia#pausecontinue-data-collection).
+You can pause and continue data collection both through the [UI](../views/app-instance/application-instance#pause--continue-application) or through the [CodeGlass Julia Package](../languages/Julia/codeglass-jl#pausecontinue-data-collection).
 
 :::warning
 When data collection is resumed, the agent immediately starts sending data again. CodeGlass may interpret this as if the function call happened directly after the last one before the pause. This can reduce the accuracy of some statistics.

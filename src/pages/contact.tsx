@@ -18,6 +18,7 @@ export default function Home(): ReactNode {
                 formId: "331f9d7d-856e-4a52-88ab-443d5e713689",
                 target: '#hubspot-form'
             });
+            let i = document.getElementsByClassName("hs-form-field");
         };
 
         document.body.appendChild(script);
@@ -38,7 +39,7 @@ export default function Home(): ReactNode {
                             <span className="highlight">Us</span>
                         </h1>
                         <p className="contact-subtext">
-                            Send a message using the form, or join the <a href="https://discord.gg/ytczAxSmX4" target="_blank">Discord</a> for faster communication.
+                            Send a message using the form, or join the <a href="https://discord.com/invite/YWAcBSyBS8" target="_blank">Discord</a> for faster communication.
                         </p>
                     </div>
 
@@ -64,7 +65,7 @@ export default function Home(): ReactNode {
 
                             <div className="info-block">
                                 <div className="info-label">Socials</div>
-                                <Link href="https://discord.gg/ytczAxSmX4" target='_blank' className="info-value">Discord</Link>
+                                <Link href="https://discord.com/invite/YWAcBSyBS8" target='_blank' className="info-value">Discord</Link>
                             </div>
                         </div>
                     </div>

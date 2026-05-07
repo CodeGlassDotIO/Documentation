@@ -20,7 +20,8 @@ Under the function name you will find several general statistics, such as:
 
 - The total number of times the function was called  
 - The inclusive execution duration  
-- The amount of memory allocated by the function
+- The exclusive amount of memory allocated by the function
+- The inclusive amount of memory allocated by the function
 
 Below the statistics you can select the [data source](../../concepts-and-features/datasources) you want to inspect. There is also a button that opens the function directly in **Visual Studio Code**.
 
@@ -42,9 +43,6 @@ The first tab is **Code Body Reconstruction**. This view attempts to recreate th
 For each function call in the reconstruction, CodeGlass shows statistics related to that specific call path.
 
 These statistics apply only to that **specific location in the code**. If the same function is called from multiple places, the statistics shown here only reflect the calls made from this particular location.
-:::note
-In some cases the reconstruction algorithm can decide to "merge" two code paths that call the same function. This also causes the statistics to merge. This is done to make the reconstruction look more like the source code. If you want to see every code path 100% separated, you can use the [Code Body Statistics](#code-body-statistics) tab.
-:::
 
 Clicking on any function call opens the **Code Member** view for that function.
 
@@ -79,7 +77,7 @@ If a code path allocated memory, you can expand the row to see more detailed sta
 You can click on any column header to sort the table by that statistic.
 
 ## Distribution Graph
-![Distribution Graph Spiderweb layout](./img/code-member/DistributionGraphSpiderWeb.png)  
+![Distribution Graph Spiderweb layout](./img/code-member/DistributionGraphSpiderweb.png)  
 ![Distribution Graph Hierarchical layout](./img/code-member/DistributionGraphHierarchy.png)  
 
 This tab renders a dynamic call graph that visualizes how selected statistics are distributed across function calls.
@@ -106,16 +104,16 @@ As a result, a child node can show more inclusive allocations than its parent.
 This happens when the child function is also called from other parts of the program that are not included in the current graph.
 :::
 
-## Controls
+### Controls
 
-You can move around the distribution graph by clicking and dragging with the mouse. Clicking on any of the nodes opens the [Code Member](./codemember) screen of this function.
+You can move around the distribution graph by clicking and dragging with the mouse. Double clicking on any of the nodes opens the [Code Member](./codemember) screen of this function.
 
 Use **Ctrl + Scroll** to zoom in and out.
 
 
 ### Toolbar
 
-The toolbar lets you choose both the **render type** and the **statistic** displayed.
+The toolbar lets you choose both the **render type** and the **statistic** displayed. There are also buttons for resetting and recentering the graph.
 
 We support two **render types**:
 
@@ -129,6 +127,10 @@ You can switch between three statistic types:
 * Allocation count
 
 Depending on the size of the graph, updating the statistic type may take up to half a minute.
+
+The second to last button is used to reset the graph. This resets the nodes position and centers the view.
+
+The last button is used to center the view. That causes all nodes to be inside the renderd area.
 
 ## Multiple Dispatch
 

@@ -98,7 +98,7 @@ export default function FeatureHighlightSection() {
   const { siteConfig } = useDocusaurusContext();
   return (
     <>
-      <section className="feature-section">
+      <section className="eng2-section">
         <div className="eng-header">
           <div className="eng-header-left">
             <h2 className="eng-title">

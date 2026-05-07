@@ -15,5 +15,11 @@ If you experience any trouble creating an account, feel free to [contact](/conta
 You do not need to enter any payment information when registering for the trial license!
 
 :::info
+When you register an account, you automatically start a 14 day trail.
+
+If you want to make an account with a paid license, please go to the [license](/license) page and purchase a license there. The email you use at checkout will be used to create your account.
+:::
+
+:::info
 The register page assumes the [CodeGlass Engine](../../intro#engine) is running on the same device as the [CodeGlass Client](../../intro#client). Registration won't work if that is not the case.
 :::

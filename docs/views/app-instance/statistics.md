@@ -62,5 +62,5 @@ Below, each type of statistic is explained for a function. The statistics for a 
 - **Inclusive Allocated Bytes**: The amount of allocated bytes inside of this function, and all other functions inside.
 
 :::info
-If [**memory profiling**](../general/settings#enable-memory-profiling) is turned off, the columns with memory statistics will not be shown.
+If [**memory profiling**](../general/settings#memory-profiling) is turned off, the columns with memory statistics will not be shown.
 :::

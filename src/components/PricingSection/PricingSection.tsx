@@ -21,9 +21,9 @@ export const PricingSection: React.FC = () => {
         </div>
       </div>
 
-      <div className="hero-actions">
+      <div className="hero-actions price-button">
           <a className="btn-primary" href="./License">View Pricing details</a>
-          <a className="btn-secondary" href="./Contact">Contact us</a>
+          <a className="btn-secondary-alternative" href="./Contact">Contact us</a>
       </div>
     </section>
     

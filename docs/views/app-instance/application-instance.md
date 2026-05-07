@@ -77,7 +77,7 @@ The items below explain each item in the toolbar from left to right.
 
 ### Create Dump File
 :::info
-This functionality can also be called from the running application, such as in Julia using [CodeGlass.create_dump_file()](../../languages/julia#creating-dump-files). 
+This functionality can also be called from the running application, such as in Julia using [CodeGlass.create_dump_file()](../../languages/Julia/codeglass-jl#creating-dump-files). 
 :::
 This button creates a [**dump file**](../../concepts-and-features/dumpfiles) containing all collected profiling data up to that moment. The file is automatically downloaded to your computer.
 

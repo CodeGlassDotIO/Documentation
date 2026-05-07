@@ -3,7 +3,7 @@ import "./LicenseSection.css";
 type LicenseSectionProps = {
   licenseTitle: string;
   description: string;
-  licensePrice: string;
+  licensePrice?: string;
   linkToLicense: string;
   disabledFeatures: LicenseFeatures;
   hasPricingFootnote: boolean;
@@ -68,12 +68,19 @@ export default function LicenseSection({
 
         <div className="licenseBottom">
           <span className="licensePrice">
-            {licensePrice}
-            {hasPricingFootnote && <sup>*</sup>}
+            {licensePrice ? (
+              <>
+                {licensePrice}
+                {hasPricingFootnote && <sup>*</sup>}
+                <div className="vatNote">ex. VAT</div>
+              </>
+            ) : (
+              "Contact Us"
+            )}
           </span>
           <div className="licenseActions">
-            <a href={linkToLicense} className="licenseButton primary">
-              Contact Us
+            <a href={linkToLicense} target={licensePrice ? "_blank" : "_self"} className="licenseButton primary">
+              {licensePrice ? "Buy License" : "Contact Us"}
             </a>
 
             {trialLink && (

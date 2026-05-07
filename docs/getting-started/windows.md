@@ -8,8 +8,8 @@ description: "Setup guide for Windows machines"
 This section explains how to setup and start CodeGlass on a Windows machine.
 
 ## Installation
-1. Download the **latest release** from the [CodeGlass GitHub repository](https://github.com/CodeGlassDotIO/CodeGlassDotIO).
-2. Unzip the downloaded archive to a location on your system. A short path is recommended, for example: 
+1. Download the **latest release** from the [CodeGlass GitHub repository](https://github.com/CodeGlassDotIO/CodeGlass).
+2. Unzip the downloaded archive to a location on your system. A short path is recommended, for example:
 ```bash
 C:\CodeGlass
 ```
@@ -20,7 +20,7 @@ After extracting, the folder structure should contain the CodeGlass executables 
 1. Navigate to the folder where you extracted CodeGlass.
 2. Start the [CodeGlass Engine](../intro#engine) by running:
 ```bash
-CodeGlass.Hubs.DotNetCore.exe
+CodeGlass.Engine.exe
 ```
 This will start the CodeGlass background services and will try to open a browser to the [CodeGlass Client](../intro#client).
 
@@ -29,9 +29,14 @@ This will start the CodeGlass background services and will try to open a browser
 :::info
 If the browser fails to open automatically, you can manually navigate to:
 ```bash
-http://localhost:60340
+http://localhost:30340
 ```
 :::
+
+## Quitting CodeGlass
+To quit CodeGlass:
+1.	Close the CodeGlass Client in your web browser
+2.	Find CodeGlass in the system tray, right click on it and press Shutdown.
 
 
 ## Config Folder

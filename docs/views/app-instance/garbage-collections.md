@@ -7,7 +7,7 @@ description: "The garbage collection screens show every garbage collection that 
 CodeGlass records every garbage collection (GC) that happens while your application is running.
 
 :::info
-This view is only available when [**deallocation profiling**](../general/settings#enable-deallocation-profiling) is enabled.
+This view is only available when [**deallocation profiling**](../general/settings#include-deallocations) is enabled.
 :::
 
 ## Garbage Collection Explorer

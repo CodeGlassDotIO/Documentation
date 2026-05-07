@@ -39,7 +39,7 @@ This feature is intended for advanced use cases where the **Start Integration** 
 
 CodeGlass can export all collected profiling data into [**dump files**](../../concepts-and-features/dumpfiles).
 
-You can upload dump files by clicking this button. Dump files can also be uploaded by **dragging and dropping them** onto any page in the WebUI.
+You can upload dump files by clicking this button. Dump files can also be uploaded by **dragging and dropping them** onto any page in the client.
 
 ![Uploading Dump file](./img/instance-list/UploadingDumpfile.png)
 

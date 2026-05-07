@@ -5,7 +5,7 @@ description: "The memory object allocator screen show information about all the 
 # Memory Object Allocator Statistics
 
 :::info
-This view is only available when [**memory profiling**](../general/settings#enable-memory-profiling) is enabled.
+This view is only available when [**memory profiling**](../general/settings#memory-profiling) is enabled.
 :::
 
 ![Memory Object Allocator Statistics](./img/memory-object-allocator-statistics/MemObjectAllocatorStatistics.png)

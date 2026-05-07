@@ -3,7 +3,6 @@
   position: relative;
   padding: 6rem 1.5rem;
   overflow: hidden;
-  background: var(--surface-container-high);
   min-height: 86vh;
 }
 

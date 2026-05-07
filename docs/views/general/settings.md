@@ -8,7 +8,7 @@ In CodeGlass, there are three different levels of settings. First, you have the 
 
 Next, the [application settings](./instance-list#settings) can be configured for each new instance created within that application.
 
-Finally, you can view the [instance settings](../app-instance/application-instance#settings) for each instance. These settings cannot be changed, as they are defined at startup.
+Finally, you can view the [instance settings](../app-instance/application-instance#settings-gear-icon) for each instance. These settings cannot be changed, as they are defined at startup.
 
 ![Application Settings](./img/settings/Settings.png)
 
@@ -36,7 +36,7 @@ When enabled, the agent will start with [**data collection paused**](../../conce
 
 You can enable data collection through the [toolbar](../app-instance/application-instance#pause--continue-data-collection) on the [instance screen](../app-instance/application-instance).
 
-You can also enable data collection through the builtin [CodeGlass Julia package](../../languages/julia#pausecontinue-data-collection).
+You can also enable data collection through the builtin [CodeGlass Julia package](../../languages/Julia/codeglass-jl#pausecontinue-data-collection).
 
 #### Only Trace Main Process
 
@@ -56,17 +56,15 @@ When checked, it will disable all code optimizations done by the runtime/compile
 
 ### Features
 
-#### Enable Memory Profiling
+#### Memory Profiling
 
 When enabled, the [Agent](../../intro#agent) will listen for memory allocation events and send this information to the Engine.
 
-#### Enable Deallocation Profiling
+#### Include Deallocations
 
 When enabled, the agent will track garbage collection and deallocation events and send them to the Engine.
 
 *This option is only available when Memory Profiling is enabled.*
-
-*This option disables concurrent garbage collection for .NET applications.*
 
 ### Exceptions
 
@@ -89,15 +87,34 @@ When checked, it will stop the data collection for the realtime renderers. This 
 #### Julia Profile Preset Type
 
 CodeGlass allows you to start Julia with multiple different profiling presets.
-These presets are described [here](../../languages/julia#julia-and-inlining).
+These presets are described [here](../../languages/Julia/codeglass-julia#julia-and-inlining).
 
 ## Engine
 
-### Shutdown
+### Power Options
 
 #### Automatic Engine Shutdown
 
 When enabled, the engine will shutdown when there are no active connections to agents and clients left.
+
+#### Register Engine For Starting Through Browser
+
+Whenever the engine is shut down, attempting to log in via the browser will start it back up.
+
+When enabled, a registry entry (Windows), a desktop entry (Linux), or an app bundle (macOS) will be created.  
+When disabled, the registry entry (Windows), the desktop entry (Linux), or the app bundle (macOS) will be removed.  
+
+### Hosting
+
+#### Serve Client Over HTTPS
+
+By default, the client is served over HTTP and is only accessible from the same machine. This is because a signed certificate is required to serve content over HTTPS.
+
+If you want to connect remotely to the Engine, you need to enable HTTPS with this setting. This change will take effect the next time the [Engine](../../intro#engine) is started and will cause the browser to display a warning prompting the user to accept the self-signed certificate.
+
+:::info
+This setting is currently disabled in the settings screen, because it requires some difficult setup. If you need to use this setting, please [contact us](/contact) so we can help you set it up.
+:::
 
 ### Executable Paths
 
@@ -105,6 +122,46 @@ When enabled, the engine will shutdown when there are no active connections to a
 
 The path to the CodeGlass Julia executable.   
 This path will be used to start Julia applications from the [Engine](../../intro#engine). It is also used to determine the start instructions of a Julia application.
+
+### Linux Terminal Settings
+
+On Linux, when you start a new Julia instance by clicking [Start Integration](../general/instance-list#start-integration), it tries to start Julia in the terminal that the [Engine](../../intro#engine) is running in.
+This is not expected behavior, you want the Julia instance to open in a new terminal. Linux has the problem that there is no way of finding or using a default terminal. 
+These settings can be used to configure your terminal to use.
+
+#### Terminal Command
+
+The actual command to start your terminal, like:
+- gnome-terminal
+- konsole
+- xterm
+- alacritty
+- kitty
+
+#### Terminal Argument Command
+
+The argument needed to execute a command when calling the terminal.
+
+For the examples above:
+- gnome-terminal: --
+- konsole: -e
+- xterm: -e
+- alacritty: -e
+- kitty: -e
+
+### Fallback Shell
+
+#### Use PowerShell As Fallback Shell
+
+Set if CodeGlass should use PowerShell as fallback shell if no default system shell could be used to launch an application.
+
+When you click on the [Start Integration](../general/instance-list#start-integration) button, the [Engine](../../intro#engine) tries to start you application in a new shell instance.
+For terminal based applications, like Julia, this can have the problem that it starts in the same shell as the engine was started in (as the system sees it as a child process). 
+
+This problem can be solved, by starting a new instance of your shell, and running the application in there. 
+But there is no native cross-platform way of starting a new shell. To fix the issue, CodeGlass ships with PowerShell build in.
+When CodeGlass could not start an instance of your native shell, and this option is enabled, CodeGlass starts a PowerShell and starts your application in there.
+If this option is disabled, CodeGlass will still try and start your application, but it might start in in the same shell as the engine is currently running.
 
 ## Client
 :::info

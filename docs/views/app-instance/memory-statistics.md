@@ -5,7 +5,7 @@ description: "The memory statistics screen show information about all the alloca
 # Memory Statistics
 
 :::info
-This view is only available when [**memory profiling**](../general/settings#enable-memory-profiling) is enabled.
+This view is only available when [**memory profiling**](../general/settings#memory-profiling) is enabled.
 :::
 
 ![Memory Statistics](./img/memory-statistics/MemoryStatistics.png)
