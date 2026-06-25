@@ -28,4 +28,4 @@ http://localhost:30340
 8. Enter your registered email address and the password sent to that email.
 9. Start using CodeGlass!
 
-If you experience any issues, please feel free to [contact us](../contact).
+If you experience any issues, please feel free to [contact us](/contact).
