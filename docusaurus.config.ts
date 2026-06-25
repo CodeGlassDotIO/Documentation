@@ -18,7 +18,7 @@ const config: Config = {
   url: 'http://localhost:30340', 
   // Set the /<baseUrl>/ pathname under which your site is served (Make sure that it ends with '/', and that the name is not'docs' as it does not like that)
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/documentation/',
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
