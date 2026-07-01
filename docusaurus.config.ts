@@ -70,7 +70,7 @@ const config: Config = {
       'classic',
       {
         docs: {
-          lastVersion: '2.0.0',
+          lastVersion: '2.1.0',
           sidebarPath: './sidebars.ts',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
@@ -91,11 +91,11 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'CodeGlass',
       logo: {
         alt: 'CodeGlass Logo',
-        src: 'img/logo.svg',
-        srcDark: 'img/logo_dark.svg',
+        srcDark: 'img/logo/dark/Horizontal_logo_base.svg',
+        src: 'img/logo/light/Horizontal_logo_base.svg',
+        width: 175,
       },
       items: [
         {
@@ -131,7 +131,7 @@ const config: Config = {
         },
         {
           type: 'docsVersionDropdown',
-          versions: ['2.0.0'],
+          versions: ['2.1.0', '2.0.0'],
           position: 'right'
         }
       ],

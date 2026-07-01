@@ -62,7 +62,7 @@
 
 /* cards */
 .contact-card {
-  background: var(--surface-container);
+  background: var(--surface-container-low);
   border: 1px solid rgba(70, 71, 82, 0.2);
   border-radius: 0.75rem;
   padding: 2rem;

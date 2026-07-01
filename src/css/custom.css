@@ -6,8 +6,8 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #4BC8F1;
-  --ifm-color-primary-dark: #00d4ec;
+  --ifm-color-primary: #00C2E8;
+  --ifm-color-primary-dark: #0092AE;
   --ifm-color-primary-darker: #277148;
   --ifm-color-primary-darkest: #205d3b;
   --ifm-color-primary-light: #33925d;
@@ -50,8 +50,8 @@
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #4BC8F1;
-  --ifm-color-primary-dark: #00d4ec;
+  --ifm-color-primary: #00C2E8;
+  --ifm-color-primary-dark: #0092AE;
   --ifm-color-primary-darker: #1fa588;
   --ifm-color-primary-darkest: #1a8870;
   --ifm-color-primary-light: #29d5b0;
@@ -67,11 +67,11 @@
   --on-surface-variant: #aaaab7;
 
   /* main surface */
-  --surface-container: #171924;
+  --surface-container: #00252D;
   /* elevated cards */
-  --surface-container-high: #2c3e50;
+  --surface-container-high: #004451;
   /* base background */
-  --surface-container-low: #1D2A34;
+  --surface-container-low: #00252D;
 
   /* subtle contrast surface */
   --surface-bright: #282b3a;
@@ -85,6 +85,10 @@
 
   footer {
     background-color: var(--surface-container-high);
+
+    &:not(.theme-layout-footer) {
+      background-color: transparent;
+    }
   }
 }
 

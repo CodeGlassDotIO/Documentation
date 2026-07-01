@@ -38,8 +38,9 @@ export const HeroSection: React.FC = () => {
                 <div className="hero-media">
                     <ThemedImage className="hero-img"
                       sources={{
-                            light: "./img/CodeGlassFullLogoLight.png",
-                            dark: "./img/CodeGlassFullLogo.png",
+                            // dark: "./img/Beeldtaal_Dark_Hexagon_Pattern_3.svg", //TODO can be re added once colors are fixed
+                            light: "./img/Beeldtaal_Light_Hexagon_Pattern_3.svg",
+                            dark: "./img/Beeldtaal_Light_Hexagon_Pattern_3.svg",
                         }}>
                     </ThemedImage>
                     <div className="hero-overlay" />
