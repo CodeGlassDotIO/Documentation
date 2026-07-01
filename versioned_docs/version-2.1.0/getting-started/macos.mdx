@@ -1,0 +1,97 @@
+---
+sidebar_position: 3
+description: "Setup guide for macOS machines"
+---
+
+import ImgActivityMonitor from './img/macos/activity-monitor.png';
+import ImgAppsFolder from './img/macos/apps-folder.png';
+import ImgDock from './img/macos/dock.png';
+import ImgGoToApplicationSupport from './img/macos/go-to-application-support.png';
+import ImgGoToFolder from './img/macos/go-to-folder.png';
+import ImgInstallDmg from './img/macos/install-dmg.png';
+import ImgInstallReplace from './img/macos/install-replace.png';
+import ImgQuitInDock from './img/macos/quit-in-dock.png';
+import ImgTerminalRunEngine from './img/macos/terminal-run-engine.png';
+import ImgTerminalRunShim from './img/macos/terminal-run-shim.png';
+
+# macOS
+This section explains how to install and start CodeGlass on a macOS machine.
+
+:::warning[Support for Safari]
+Using CodeGlass from the **Safari web browser is currently not supported** due to missing browser features required by CodeGlass. Please use another web browser (e.g. Firefox or Chrome) instead for now.
+:::
+
+## Installation
+1. Download the **latest release** from the [CodeGlass GitHub repository](https://github.com/CodeGlassDotIO/CodeGlass).
+2. Open the the `CodeGlass.dmg` disk image and drag CodeGlass to the Applications folder. \
+**NB:** Don’t open CodeGlass from the disk image, this won’t work.
+    <img src={ImgInstallDmg} alt="Drag the CodeGlass app to the Applications folder" width="35%" />
+3. When prompted with _‘An item named “CodeGlass.app” already exists in this location’_, press the **Replace** button. This happens when you upgrade to a newer version of CodeGlass.
+
+    <img src={ImgInstallReplace} alt="Click Replace" width="35%" />
+
+## Running CodeGlass
+1. Start the [CodeGlass Engine](../intro#engine) by opening **Finder**, go to the **Applications** folder in the sidebar and double click on CodeGlass.
+    <img src={ImgAppsFolder} alt="CodeGlass in the Applications folder" width="50%" />
+2. CodeGlass should now appear in the dock:
+    <img src={ImgDock} alt="CodeGlass in the Dock" width="50%" />
+3.	Starting CodeGlass will launch your default browser and navigate to the [CodeGlass Client](../intro#client). If it doesn’t, you can click op CodeGlass in the dock to reopen the window. Please note that Safari is not supported at the moment, use Firefox or Chrome instead.
+
+4. [Log in](../views/general/login) and start working with the data the [CodeGlass Agent](../intro#agent) collected.
+
+:::info
+If the browser fails to open automatically, you can manually navigate to:
+```bash
+http://localhost:30340
+```
+:::
+
+## Quitting CodeGlas
+1. Go to CodeGlass in the **Dock**.
+2. Right click on it (when using a trackpad, use two fingers or press <kbd>Control</kbd> while clicking).
+    <img src={ImgQuitInDock} alt="Press Quit" width="25%" />
+
+3. Press **Quit** to stop CodeGlass.
+
+:::info
+When you have the [CodeGlass Client](../intro#client) open in your web browser, pressing the **Quit** button might not do what you expect. Try closing all CodeGlass Client browser tabs and trying again. If that still doesn't work, see [Quitting CodeGlass using Activity Monitor](#quitting-codeglass-using-activity-monitor).
+:::
+
+## Config Folder
+The [Engine](../intro#engine) is designed so it does not write files to the folder where it was extracted. This makes it possible to run it from locations that are read-only.
+
+By default, all user-specific files are stored in `~/Library/Application Support/CodeGlass`. If you wish to override this default location, see [Overriding the Config Folder location](#overriding-the-config-folder-location).
+
+You can navigate to this folder by following these steps.
+1. Open **Finder**.
+2. In the menu bar, under the **Go** menu, press **Go To Folder...**
+    <img src={ImgGoToFolder} alt="Go To Folder..." width="50%" />
+3. Enter `~/Library/Application Support` in the location field:
+
+    <img src={ImgGoToApplicationSupport} alt="Application Support" width="50%" />
+
+## Advanced
+The instructions above should work for most use cases. Read below if you want to dig in more advanced macOS-specific topics about CodeGlass.
+
+### Overriding the Config Folder location
+You can override this location by setting the `CODEGLASS_USERFOLDER_OVERRIDE` environment variable before starting the Engine:
+```bash
+launchctl setenv CODEGLASS_USERFOLDER_OVERRIDE "path/to/new/config/folder"
+```
+
+### Starting CodeGlass from the Terminal
+If you prefer starting CodeGlass from the command line, you can run the `/Applications/CodeGlass.app/Contents/MacOS/CodeGlassShim` executable from the Terminal. This will open CodeGlass just like you would when you start it from the Applications folder.
+    <img src={ImgTerminalRunShim} alt="CodeGlass from Terminal" width="50%" />
+
+You can also start the [CodeGlass Engine](../intro.md#engine) directly, bypassing the CodeGlass shim (which will therefore not show CodeGlass as running in the dock). You can do this by running: `/Applications/CodeGlass.app/Contents/Resources/CodeGlass/CodeGlass.Engine`
+    <img src={ImgTerminalRunEngine} alt="CodeGlass from Terminal" width="75%" />
+
+
+### Quitting CodeGlass using Activity Monitor
+Sometimes quiting CodeGlass from the Dock, as explained in [Quitting CodeGlass](#quitting-codeglas), doesn't work quite as expected. This can happen for a variety of reasons, such as having a lingering connection to the Engine somewhere. To stop CodeGlass in those cases, follow these steps.
+
+1. Open **Activity Monitor**
+2. Search for `CodeGlass` and select all occurrences
+    <img src={ImgActivityMonitor} alt="CodeGlass in the Activity Monitor" width="75%" />
+
+3. Press the stop button (the hexagonal **X** in the top toolbar)

@@ -64,11 +64,6 @@ The applied filters prevents CodeGlass from profiling these packages. You can st
 - **GPUCompiler**
 - **Enzyme**
 - **ReactantCUDAExt**
-- **Task.jl**: This one is filtered, as it has some edge cases that can mess with the profiling results.
-- **REPL**: This one is filtered, as it has some edge cases that can mess with the profiling results.
-
-We also filter a small selection of c-calls:
-- **ijl_\* c-calls**: All c-calls where the name starts with *ijl_*. These functions are mainly used by the runtime internally. These functions often contain a lot of time (as they also manage the REPL, etc), but are often not really of interest. Including it can skew your results.
 
 :::note
 If you think these filters filter our to much data, or that they do not filter enough, or if you find packages that do not compile with CodeGlass Julia, please [reach out](/contact) to us and we can change filters.

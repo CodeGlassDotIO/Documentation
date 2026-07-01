@@ -33,9 +33,10 @@ The **Open in Visual Studio Code** button always attempts to open the file, even
 ![Code Body Reconstruction](./img/code-member/CodeBodyReconstruction_Detailed.png)
 
 :::info
-The Code Body Reconstruction does not reflect your original source code, but it (tries to) reflects what the compiler and runtime made of your source code and what was executed. Because of this, reconstructions can sometimes be incomplete, inaccurate, or missing information, visible by the percentage counter. 
+The Code Body Reconstruction does not reflect your original source code, but it (tries to) reflects what the compiler and runtime made of your source code and what was executed. Because of this, reconstructions can sometimes be incomplete, inaccurate, or missing information. 
+In the top right you can see how many of the [code paths](../../concepts-and-features/code-path) are included compared to the total amount of code paths in function. 
 
-At the top of each reconstruction, there is a counter to show how complete the reconstruction is. The counter shows the number of included [code paths](../../concepts-and-features/code-path) in the reconstruction and the total number of available code paths for this codemember.
+The reconstruction can, in some cases, include more or less code paths then the function has unique code paths. This can happen when the reconstruction algorithm failed to include a certain path, or added a code path twice to increase its chances of successfully creating a reconstruction.
 :::
 
 The first tab is **Code Body Reconstruction**. This view attempts to recreate the structure of the function body based on the runtime events that were captured during execution.
@@ -53,7 +54,7 @@ Next to the name of the object that was allocated, it also shows how many times 
 
 Clicking on an object, switches to the [Code Body Statistics](#code-body-statistics) tab, and puts focus on the allocated object in the code path.
 :::info
-CodeGlass always know that an allocation happens and how much it allocates, but might not always know what type is being allocated, in these cases it shows: "Unknown Type". This will occure less and less with every update of CodeGlass.
+CodeGlass always know that an allocation happens and how much it allocates, but might not always know what type is being allocated, in these cases it shows: "Unknown Type". This will occur less and less with every update of CodeGlass.
 :::
 
 ### Called From
@@ -69,6 +70,8 @@ Each **call site** represents a unique [**code path**](../../concepts-and-featur
 ![Code Body Statistics](./img/code-member/CodeBodyStatistics.png)  
 
 This tab lists all executed **code paths** that are part of this function, together with their statistics.
+
+Above the table is a toolbar where you can toggle **Dynamic Dispatches**. When you toggle this button, the list switches between showing all called code paths and only showing code paths that were dynamically dispatched.
 
 The name shown **above** each function name indicates the function that was executed immediately before this one.
 
@@ -113,7 +116,7 @@ Use **Ctrl + Scroll** to zoom in and out.
 
 ### Toolbar
 
-The toolbar lets you choose both the **render type** and the **statistic** displayed. There are also buttons for resetting and recentering the graph.
+The toolbar lets you choose both the **render type** and the **statistic** displayed. There are also buttons for resetting and re-centering the graph.
 
 We support two **render types**:
 
@@ -130,7 +133,7 @@ Depending on the size of the graph, updating the statistic type may take up to h
 
 The second to last button is used to reset the graph. This resets the nodes position and centers the view.
 
-The last button is used to center the view. That causes all nodes to be inside the renderd area.
+The last button is used to center the view. That causes all nodes to be inside the rendered area.
 
 ## Multiple Dispatch
 

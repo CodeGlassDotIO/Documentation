@@ -36,10 +36,9 @@ If CodeGlass did not collect the function that an exception occurred in, it show
 
 Below the header you will find the **Exception Info** section. This section contains additional details about the exception.
 
-Two important items shown here are:
+The screen is split into 2 parts:
+- **Task Call Stack:** Shows the full call stack of the task at the moment the exception occurred. Functions that returned between when the exception is thrown until it is caught are shown with a red line on the left side.
+- **Code Body Reconstruction:** Shows the [Code Body Reconstruction](./codemember#code-body-reconstruction) view for the function you have selected from the call stack. This also shows on what line the exception occured.
 
-- **Unwound Stack** – Shows the functions that returned because of the exception until a catch block was found.
-- **Thread Call Stack** – Shows the full call stack of the thread at the moment the exception occurred.
-
-Clicking on an item in the thread call stack updates the [Code Body Reconstruction](./codemember#code-body-reconstruction) view for that function.
+Clicking on an item in the task call stack updates the [Code Body Reconstruction](./codemember#code-body-reconstruction) view for that function.
 Double-clicking on an item opens the [Code Member](./codemember) screen for this function.

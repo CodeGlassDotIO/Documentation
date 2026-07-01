@@ -33,3 +33,14 @@ For the command, you have to provide the full path to your CodeGlass Julia execu
 
 For the CG_TOKEN, you have to provide the application token that you can find in the [start instructions](../../views/general/instance-list#start-instructions).
 If you want to further configure the behavior, you can also specify any of the environment variables described [here](./installation-and-usage#environment-variables).
+
+## Command Fails To Run
+In some cases, the command fails to start Julia. The most common issue is that the path contains spaces.
+
+To fix this, add quotes around the path like this: `\"<EngineFolder>/RuntimeIntegrations/Julia/bin/julia(.exe)\"`.
+
+:::warning
+If you use Windows, just adding the quotes does not fix the issue. On Windows, the command has to start with an '&'.
+
+This makes the full command: `"& \"<EngineFolder>/RuntimeIntegrations/Julia/bin/julia.exe\" --project=."`
+:::

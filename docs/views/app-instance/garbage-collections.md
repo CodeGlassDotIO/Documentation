@@ -57,7 +57,22 @@ You can double-click on any [memory object](./mem-object-allocator-statistics) o
 
 You can click on any column to sort the table by that field.
 
+### Task Call Stack
+
+![Garbage Collection Task Call Stack](./img/garbage-collection/GarbageCollectionCallStack.png)
+
+This is the second tab on the page. It shows the call stack of every task at the moment the GC started.
+
+At the top is a toolbar where you can switch between the different tasks that were active at the moment the GC started. The task that caused the GC to get triggered has **GC Task** in its name.
+
+The screen is split into 2 parts:
+- **Task Call Stack:** Shows the full call stack of the task at the moment the garbage collection occurred.
+- **Code Body Reconstruction:** Shows the [Code Body Reconstruction](./codemember#code-body-reconstruction) view for the function you have selected from the call stack. This also shows on what line the garbage collection occurred if you are looking at the task that ran the garbage collection.
+
+Clicking on an item in the task call stack updates the [Code Body Reconstruction](./codemember#code-body-reconstruction) view for that function.
+Double-clicking on an item opens the [Code Member](./codemember) screen for this function.
+
 ### Extra Info
 ![Garbage Collection Extra Info](./img/garbage-collection/GarbageCollectionDetails_ExtraInfo.png)
 
-This is the second tab on the page. It shows some internal values that Julia tracks for the garbage collector. These values can be used to debug garbage collection behavior.
+This is the third tab on the page. It shows some internal values that Julia tracks for the garbage collector. These values can be used to debug garbage collection behavior.

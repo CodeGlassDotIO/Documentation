@@ -1,9 +1,50 @@
-.licenses {
-  display: grid;
-  gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  max-width: 1200px;
+.licenses-wrapper {
+  width: fit-content;
+  max-width: 100%;
   margin: 0 auto;
+}
+
+.licenses-wrapper .licenses {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 2rem;
+}
+
+@media (min-width: 1000px) {
+  .licenses-wrapper .licenses {
+    flex-direction: row;
+    margin: 0;
+    padding: 0 2rem;
+    gap: 2rem;
+  }
+
+  .licenses-wrapper .licenses-full-width .licenseSection .licenseCard .licenseActions {
+    flex-direction: row-reverse !important;
+  }
+
+  .licenses-wrapper .licenses-full-width .licenseSection .licenseCard .licenseButton {
+    margin: auto;
+  }
+}
+
+.licenses-wrapper .licenses-full-width {
+  width: calc(100% - 4rem);
+  margin: 0 2rem;
+}
+
+.licenses-wrapper .licenses-full-width .licenseSection .licenseCard {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+}
+
+.licenses-wrapper .licenses-full-width .licenseSection .licenseCard .licenseFootnote {
+  text-align: left;
+}
+
+.licenses-wrapper .licenses-full-width .licenseSection .licenseCard .licenseActions {
+  flex-direction: column;
 }
 
 .account-exists {

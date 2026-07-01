@@ -78,7 +78,7 @@ This Agreement applies whether you purchase a Subscription directly from CodeGla
 # 5. ACCESS TO PRODUCTS
 5.1. All deliveries under this Agreement will be electronic. You must have an Internet connection in order to access your CodeGlass Account and receive any deliveries. You are responsible for downloading and installing the Products, which are made available for download on the CodeGlass website at [https://codeglass.io](https://codeglass.io).
 
-5.2 You may use the CGA in accordance with the CodeGlass Account Agreement available at [https://julia.codeglass.io/docs/account](../../account.md). You are solely responsible for the accuracy of any information provided via, and any action taken through, the CGA.
+5.2 You may use the CGA in accordance with the CodeGlass Account Agreement available at [https://julia.codeglass.io/docs/account](../../account/account.md). You are solely responsible for the accuracy of any information provided via, and any action taken through, the CGA.
 
 5.3 You may activate and access Products in the following way:
 

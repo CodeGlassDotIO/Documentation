@@ -12,6 +12,8 @@ Finally, you can view the [instance settings](../app-instance/application-instan
 
 ![Application Settings](./img/settings/Settings.png)
 
+Each setting lists the languages it supports. If an application does not support a setting, that setting is not shown in its application or instance settings.
+
 ## Agent
 
 ### Start
@@ -46,14 +48,6 @@ By default, CodeGlass automatically profiles these child processes. This can slo
 
 Enabling this option prevents CodeGlass from profiling child processes. If your application relies on them, leave this option disabled.
 
-### Optimizations
-
-#### Disable All Code Optimizations
-
-When checked, it will disable all code optimizations done by the runtime/compiler.
-
-*This option only works for .NET applications.*
-
 ### Features
 
 #### Memory Profiling
@@ -65,6 +59,18 @@ When enabled, the [Agent](../../intro#agent) will listen for memory allocation e
 When enabled, the agent will track garbage collection and deallocation events and send them to the Engine.
 
 *This option is only available when Memory Profiling is enabled.*
+
+### Experimental Features
+
+#### Disable Realtime Renderers
+
+When checked, it will stop the data collection for the realtime renderers. This will improve the speed at which CodeGlass can process data.
+
+### Garbage Collections
+
+#### Maximum Garbage Collection History
+
+This value controls how many garbage collections CodeGlass keeps in its history, as they can contain a large amount of data.
 
 ### Exceptions
 
@@ -78,16 +84,27 @@ Exceptions can contain a lot of data. By setting this value, you tell CodeGlass 
 
 By setting this value, you tell CodeGlass how many items it should keep stored in its callstack history.
 
-#### Disable Realtime Renderers
-
-When checked, it will stop the data collection for the realtime renderers. This will improve the speed at which CodeGlass can process data.
-
 ### Julia
 
 #### Julia Profile Preset Type
 
 CodeGlass allows you to start Julia with multiple different profiling presets.
 These presets are described [here](../../languages/Julia/codeglass-julia#julia-and-inlining).
+
+### .NET
+
+#### Disable All Code Optimizations
+
+When checked, it will disable all code optimizations done by the runtime/compiler.
+
+#### Disable All Function Inlining
+
+When checked, it will disable all function inlining done by the runtime/compiler.
+
+#### Experimental hooks
+
+When checked, it will use experimental hooks.
+
 
 ## Engine
 
@@ -112,8 +129,14 @@ By default, the client is served over HTTP and is only accessible from the same 
 
 If you want to connect remotely to the Engine, you need to enable HTTPS with this setting. This change will take effect the next time the [Engine](../../intro#engine) is started and will cause the browser to display a warning prompting the user to accept the self-signed certificate.
 
+:::warning
+When you enable this option, CodeGlass generates a self-signed certificate. Depending on your computer (network) settings you may need to do more configuration to allow other computers to access your computer from the network.
+
+These are not CodeGlass specific and you should only do them if you know what you are doing as this may impact the security of your device.
+:::
+
 :::info
-This setting is currently disabled in the settings screen, because it requires some difficult setup. If you need to use this setting, please [contact us](/contact) so we can help you set it up.
+If you disable this option, CodeGlass will automatically remove the self-signed certificate the next time you restart the Engine.
 :::
 
 ### Executable Paths
@@ -164,6 +187,21 @@ When CodeGlass could not start an instance of your native shell, and this option
 If this option is disabled, CodeGlass will still try and start your application, but it might start in in the same shell as the engine is currently running.
 
 ## Client
-:::info
-Client settings are still a Work In Progress.
-:::
+
+### Displaying Numbers
+
+#### Separator Character
+Here you can define the character that CodeGlass should use to separate thousands. (Ex. 1.000 or 1_000)
+
+#### Decimal Character
+Here you can define the character that CodeGlass should use to separate decimal values. (Ex. 1.0 or 1,0)
+
+### Render Colors
+Here you can configure what colors some of the render screens should use to visualize data. The render screens in CodeGlass often show a gradation of performance using two colors. 
+By default this is a gradation between green (for the best value) and red (for the worst values). CodeGlass automatically calculates the color gradients based on a values percentage relative to the best performing value.
+
+#### Start Color
+The color CodeGlass should use for the 'worst' values.
+
+#### End Color
+The color CodeGlass should use for the 'best' values.

@@ -24,7 +24,7 @@ Clicking **Add Application** opens a short setup guide that helps you add a new 
 The first step is to select the **type of application** you want to create.  
 
 :::info
-Currently limited to Julia, see [intro](../../intro) for more information.
+We currently support Julia and .NET applications. This documentation primarily targets Julia, but the majority of the content also applies to .NET.
 :::
 
 ![Add Application 1](./img/application-list/AddApplication1.png)

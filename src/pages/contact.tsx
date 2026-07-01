@@ -18,8 +18,22 @@ export default function Home(): ReactNode {
                 formId: "331f9d7d-856e-4a52-88ab-443d5e713689",
                 target: '#hubspot-form'
             });
-            let i = document.getElementsByClassName("hs-form-field");
         };
+
+        script.onerror = () => {
+            const msg = document.createElement("p");
+            msg.innerText = "Contact form is not available on the local documentation. Please go to the live ";
+
+            const link = document.createElement("a");
+            link.href = "https://julia.codeglass.io/contact";
+            link.target = "_blank";
+            link.innerText = "contact form.";
+
+            msg.appendChild(link);
+
+            const formDiv = document.getElementById("hubspot-form")
+            formDiv!.appendChild(msg);
+        }
 
         document.body.appendChild(script);
     }, []);
