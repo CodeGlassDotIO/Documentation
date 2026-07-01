@@ -1,5 +1,5 @@
 ---
-sidebar_position: 10
+sidebar_position: 1
 ---
 
 # Account
@@ -21,6 +21,10 @@ This account allows you to:
 - Manage assigned licenses.
 - Change your password
 
+More details can be found in the [License Portal](account/license-portal) documentation.
+
+If you are a [license manager](account/license-portal#license-manager), you can also create accounts for others.
+
 ## Stripe CodeGlass Account
 
 If you paid for your subscription, you will receive access to the **Stripe Customer Portal**. This is used to:
@@ -28,3 +32,5 @@ If you paid for your subscription, you will receive access to the **Stripe Custo
 - Cancel or update your subscription.
 
 Your Stripe account uses the same email address as your [LicenseSpring CodeGlass account](#licensespring-codeglass-account).
+
+You can learn more about managing your billing and subscriptions on the [Change Subscription](./account/change-subscription) page.

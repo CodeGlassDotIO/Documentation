@@ -1,4 +1,4 @@
-.licenses {
+.licenses, .licenses-full-width {
   display: grid;
   gap: 2rem;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -9,4 +9,27 @@
 .account-exists {
   display: flex;
   justify-content: center;
+}
+
+.licenses-full-width {
+  width: 100%;
+}
+
+.licenses-full-width .licenseSection {
+  .licenseCard {
+    max-width: none;
+    display: block;
+
+    .licenseFootnote {
+      text-align: left;
+    };
+
+    .licenseActions {
+      flex-direction: row-reverse;
+    };
+
+    .licenseButton {
+      margin: auto;
+    }
+  }
 }

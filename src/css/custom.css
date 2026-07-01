@@ -85,6 +85,10 @@
 
   footer {
     background-color: var(--surface-container-high);
+
+    &:not(.theme-layout-footer) {
+      background-color: transparent;
+    }
   }
 }
 

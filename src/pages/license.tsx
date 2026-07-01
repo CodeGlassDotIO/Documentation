@@ -5,33 +5,44 @@ import LicenseSection, { LicenseFeatures } from '../components/LicenseSection/Li
 import "./license.css";
 import Layout from '@theme/Layout';
 
-
 export default function Home(): ReactNode {
   return (
     <Layout>
+      <section className="licenses-full-width">
+      <LicenseSection 
+        licenseTitle="Temporary Discourse Offer" 
+        description="3 month CodeGlass Pro license for a lowered price." 
+        disabledFeatures={undefined}
+        licensePrice="€15,-" 
+        linkToLicense="https://buy.stripe.com/14A7sLarV8k31JP1yF7N60q"
+        pricingFootnote="* Price and license are for 3 months, after which your license automatically expires."
+        moreInfoLink="https://discourse.julialang.org/t/ann-codeglass-see-what-your-code-is-actually-doing/137020/16"
+      />
+      </section>
       <section className="licenses">
         <LicenseSection 
-          licenseTitle="Basic" 
-          description="For individual use with essential features. Some advanced capabilities are disabled. Not licensed for commercial use." 
-          disabledFeatures={LicenseFeatures.DumpFiles | LicenseFeatures.CSV | LicenseFeatures.RemoteConnection | LicenseFeatures.DedicatedSupport}
-          licensePrice="€35,-" 
-          linkToLicense="https://buy.stripe.com/00w7sLbvZ7fZ3RX3GN7N60p"
-          hasPricingFootnote={true}
-        />
-        <LicenseSection 
-          licenseTitle="Pro" 
-          description="For individual users who need full functionality. Includes all features except dedicated support. Not licensed for commercial use." 
-          disabledFeatures={LicenseFeatures.DedicatedSupport}
+          licenseTitle="Enterprise" 
+          description="For moving ahead in the market. Designed for organizations." 
+          disabledFeatures={LicenseFeatures.None}
           linkToLicense="./contact"
-          hasPricingFootnote={false}
+          pricingFootnote={undefined}
           trialLink="./docs/trial"
         />
         <LicenseSection 
-          licenseTitle="Enterprise" 
-          description="Designed for organizations. Includes all features plus dedicated support." 
-          disabledFeatures={LicenseFeatures.None}
+          licenseTitle="Pro" 
+          description="Working without limits. For users who need full functionality." 
+          disabledFeatures={LicenseFeatures.DedicatedSupport | LicenseFeatures.CommercialUse}
           linkToLicense="./contact"
-          hasPricingFootnote={false}
+          pricingFootnote={undefined}
+          trialLink="./docs/trial"
+        />
+        <LicenseSection 
+          licenseTitle="Basic" 
+          description="All the essentials. For individual use." 
+          disabledFeatures={LicenseFeatures.DumpFiles | LicenseFeatures.CSV | LicenseFeatures.RemoteConnection | LicenseFeatures.DedicatedSupport | LicenseFeatures.CommercialUse }
+          licensePrice="€35,-" 
+          linkToLicense="https://buy.stripe.com/00w7sLbvZ7fZ3RX3GN7N60p"
+          pricingFootnote="* Monthly price shown. Pay annually and get 2 months free."
           trialLink="./docs/trial"
         />
       </section>

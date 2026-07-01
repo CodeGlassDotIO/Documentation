@@ -9,6 +9,7 @@ export default function Home(): ReactNode {
     <Layout>
       <section className="thank-you">
         <h1>Thank you for your purchase</h1>
+        <p className="color-red">We are experiencing some issues with our connection between our payment processor and LicenseSpring. <br/>The creation and confirmation e-mail of your license might be delayed up to 24 hours. <br/>We apologize for the delay.</p>
         <p>
           Your order has been successfully processed. You will receive a confirmation
           email shortly with your account details.

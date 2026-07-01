@@ -5,3 +5,8 @@
   align-items: center;
   padding-top: 1vh;
 }
+
+.color-red {
+  color: red;
+  text-align: center;
+}
