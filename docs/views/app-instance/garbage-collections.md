@@ -53,7 +53,7 @@ If the GC you are inspecting was a **Reset page**, the value **Time spent** is a
 
 This is the first tab on the page. It shows every object that was freed during this GC, and the function where that object was originally allocated.
 
-You can double-click on any [memory object](./mem-object-allocator-statistics) or [function](./codemember) to go the screen of this value.
+You can double-click on any [memory object](./mem-object-allocator-statistics) or [*code member*](./codemember) to go the screen of this value.
 
 You can click on any column to sort the table by that field.
 
@@ -70,7 +70,7 @@ The screen is split into 2 parts:
 - **Code Body Reconstruction:** Shows the [Code Body Reconstruction](./codemember#code-body-reconstruction) view for the function you have selected from the call stack. This also shows on what line the garbage collection occurred if you are looking at the task that ran the garbage collection.
 
 Clicking on an item in the task call stack updates the [Code Body Reconstruction](./codemember#code-body-reconstruction) view for that function.
-Double-clicking on an item opens the [Code Member](./codemember) screen for this function.
+Double-clicking on an item opens the [*code member*](./codemember) screen for this function.
 
 ### Extra Info
 ![Garbage Collection Extra Info](./img/garbage-collection/GarbageCollectionDetails_ExtraInfo.png)

@@ -66,7 +66,7 @@ Looking deeper, we find the lambda function passed to `filter`. These functions 
 
 ![Find Items Lambda Function](./img/implicit-conversions/FindItems_Lambda.png)
 
-Inside this function, the compiler created multiple [code paths](../../concepts-and-features/code-path) for the `<=` call. It also had to use dynamic dispatch, because it could not determine the exact types.
+Inside this function, the compiler created multiple [*code paths*](../../concepts-and-features/code-path) for the `<=` call. It also had to use dynamic dispatch, because it could not determine the exact types.
 Before calling the comparison, a `Float64` is allocated. This happens because the compiler inserts implicit conversions to make the types match.
 In this example, the allocation happens once per item. With only 8 items this is small, but with larger datasets this quickly adds up.
 

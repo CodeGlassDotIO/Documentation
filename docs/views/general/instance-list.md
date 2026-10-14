@@ -11,7 +11,7 @@ After selecting an application, you arrive at the **Instance List** screen. From
 An **instance** represents a single running process that is being profiled.
 
 On the left side of the screen you will see a list of all instances that belong to this application.  
-Double-clicking an instance opens the [Application Instance Screen](../app-instance/application-instance).
+Double-clicking an instance opens the [Application Instance Screen](../app-instance).
 
 ## Sidebar
 ### Start Integration
@@ -37,9 +37,9 @@ This feature is intended for advanced use cases where the **Start Integration** 
 
 ### Add Dump Files
 
-CodeGlass can export all collected profiling data into [**dump files**](../../concepts-and-features/dumpfiles).
+CodeGlass can export all collected profiling data into [*dump files*](../../concepts-and-features/dumpfiles).
 
-You can upload dump files by clicking this button. Dump files can also be uploaded by **dragging and dropping them** onto any page in the client.
+You can upload *dump files* by clicking this button. *Dump files* can also be uploaded by **dragging and dropping them** onto any page in the client.
 
 ![Uploading Dump file](./img/instance-list/UploadingDumpfile.png)
 
@@ -54,7 +54,7 @@ These settings are used as a template when a new instance of the application is 
 
 ### Remove Application
 :::info
-To avoid problems when an agent is still attached, or when another user is viewing the data, the application is not deleted immediately. It is hidden from the UI and fully removed after the Engine is restarted.
+To avoid problems when an Agent is still attached, or when another user is viewing the data, the application is not deleted immediately. It is hidden from the UI and fully removed after the Engine is restarted.
 :::
 
 Clicking this button removes the application from CodeGlass.

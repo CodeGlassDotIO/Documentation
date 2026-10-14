@@ -11,7 +11,7 @@ Functions are grouped by the module where they are defined.
 
 Double-clicking a module opens a new view that only shows the functions from that module.
 
-Double-clicking a function opens the [Code Member](./codemember) view for that function.
+Double-clicking a function opens the [*code member*](./codemember) view for that function.
 
 You can also click on any column in the table to sort the data by that statistic.
 
@@ -22,18 +22,18 @@ Above the table there is a toolbar with several options:
 - **Filtering**: filters the data shown in the table. More about filters [here](../../concepts-and-features/filters).
 - **Export to CSV**: generates a CSV file from the table. The file is automatically downloaded to your device.
 - **Collapse All**: collapses all modules in the table.
-- **Data Source**: select which [data source](../../concepts-and-features/datasources) the statistics should use.
+- **Data Source**: select which [*data source*](../../concepts-and-features/datasources) the statistics should use.
 
 ## Search
 
-The searchbar can be used to search for code members.  
+The searchbar can be used to search for *code members*.  
 
-Double-Clicking a search result will try to show the code member in the table.
+Double-Clicking a search result will try to show the *code member* in the table.
 
-Ctrl+Click on a search result will open the [Code Member](./codemember) view of that code member.
+Ctrl+Click on a search result will open the [*code member*](./codemember) view of that *code member*.
 
 :::info
-At present, searches are limited to code member names and do not include modules or types. Applied filters are also not taken into account.
+At present, searches are limited to *code member* names and do not include modules or types. Applied filters are also not taken into account.
 :::
 
 

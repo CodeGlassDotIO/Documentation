@@ -23,7 +23,7 @@ You can click any column in the table to sort the data by that column.
 Above the table there is a toolbar with two options:
 
 - **Create CSV file**: generates a CSV file from the table. The file is automatically downloaded to your device.
-- **Data source selection**: select which [data source](../../concepts-and-features/datasources) the table should display data from.
+- **Data source selection**: select which [*data source*](../../concepts-and-features/datasources) the table should display data from.
 
 ## Types of Memory Statistics
 

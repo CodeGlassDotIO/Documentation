@@ -41,21 +41,21 @@ In the end, we want to **help developers spend less time diagnosing issues so th
 
 ## Getting Started
 
-If you just want to get started, checkout [Getting Started](./category/getting-started/). This contains the steps to setup on Window, Linux and Mac
+If you just want to get started, checkout [Getting Started](./getting-started/). This contains the steps to setup on Window, Linux and Mac
 
 ## The structure
 CodeGlass is made up of **three main parts** that work together: the **Engine**, the **Client**, and the **Agent**.
 
-Each part has a different role, but together they collect, process, and visualize your agent data.
+Each part has a different role, but together they collect, process, and visualize your Agent data.
 
 ### Engine
-The **Engine** is the back-end of CodeGlass. It is responsible for storing all the data the agent collected and performing the calculations needed to analyze it.
+The **Engine** is the back-end of CodeGlass. It is responsible for storing all the data the Agent collected and performing the calculations needed to analyze it.
 
 Your data stays under your control, and by default locally on your machine. However you can set it up so you can use or access it remotely or share collected information by exporting it.
 
 
 ### Client
-The **Client** is a lightweight web application used to explore and visualize your agent data.
+The **Client** is a lightweight web application used to explore and visualize your Agent data.
 
 It connects to the Engine and presents the collected information in a clear and visual way, making it easier to understand how your code behaves during execution.
 

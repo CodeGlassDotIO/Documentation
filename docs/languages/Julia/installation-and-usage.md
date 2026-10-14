@@ -10,7 +10,7 @@ When you install CodeGlass, the latest version of CodeGlass Julia is automatical
 <EngineFolder>/RuntimeIntegrations/Julia/bin/julia(.exe)
 ```
 
-You can also use this path to manually start Julia if you do not want to do it using the [start integration](../../views/general/instance-list#start-integration) option in the [client](../../intro#client).
+You can also use this path to manually start Julia if you do not want to do it using the [start integration](../../views/general/instance-list#start-integration) option in the [Client](../../intro#client).
 
 ## Juliaup
 If you are planning on regularly running CodeGlass Julia manually, it can be useful to add CodeGlass Julia to [Juliaup](https://github.com/JuliaLang/juliaup).
@@ -29,7 +29,7 @@ By default if you start CodeGlass Julia, it will instantly start a new profiling
 - **CG_ENABLE**: sets whether or not Julia should try and make a connection with the engine. Default is 1, set to 0 to prevent Julia from making a connection.
 - **CG_TOKEN**: used to tell the engine under which application the instance should be grouped. Leave empty for it to be grouped under a fallback application. If you already have an application, you can use the token that can be found in the [start instructions](../../views/general/instance-list#start-instructions) tab. 
 You can also specify any string you want, this will cause CodeGlass to create a new application with this token as its name.
-- **CG_PAUSE_DATA_COLLECTION_ON_START**: tells the agent if it should [pause data collection](../../concepts-and-features/pause-data-collection) when Julia starts. If it is set to 1 Julia starts with data collection paused. If not set, Julia uses the setting set in the [application settings](../../views/general/instance-list#settings).
+- **CG_PAUSE_DATA_COLLECTION_ON_START**: tells the [Agent](../../intro#agent) if it should [pause data collection](../../concepts-and-features/pause-data-collection) when Julia starts. If it is set to 1 Julia starts with data collection paused. If not set, Julia uses the setting set in the [application settings](../../views/general/instance-list#settings).
 - **CG_IP**: if the engine is running on a different device, you can use this variable to specify the ip that the engine is running on.
 - **CG_PORT**: if the engine is running on a different device, you can use this variable to specify the port that the engine is running on. The default port of the engine is: `30340`.
 

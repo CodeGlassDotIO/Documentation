@@ -12,10 +12,10 @@ This view is only available when [**memory profiling**](../general/settings#memo
 
 The **Memory Object Allocator Statistics** view shows every function that allocated this specific object.
 
-Besides showing which functions allocated the object, you can also expand a function to see the exact [code paths](../../concepts-and-features/code-path) where the allocation happened.
+Besides showing which functions allocated the object, you can also expand a function to see the exact [*code paths*](../../concepts-and-features/code-path) where the allocation happened.
 
-Double-clicking on a function opens its [Code Member](./codemember) view.  
-Double-clicking on one of the code paths opens the Code Member view for the function that contains that code.
+Double-clicking on a function opens its [*code member*](./codemember) view.  
+Double-clicking on one of the *code paths* opens the *code member* view for the function that contains that code.
 
 You can click on any column in the table to sort the data by that statistic.
 
@@ -23,7 +23,7 @@ You can click on any column in the table to sort the data by that statistic.
 
 Above the table there is a toolbar.
 
-Here you can choose which [data source](../../concepts-and-features/datasources) the view should display data from.
+Here you can choose which [*data source*](../../concepts-and-features/datasources) the view should display data from.
 
 ## Types of Memory Statistics
 

@@ -6,7 +6,7 @@ For Julia this is not yet implemented, and filters therefore are only visual fil
 :::
 
 :::info
-Filtering in CodeGlass can be done in more advanced ways then described below, but these features are not yet available on the current version of the client. These advanced features will be added in an later update.
+Filtering in CodeGlass can be done in more advanced ways then described below, but these features are not yet available on the current version of the [Client](../intro#client). These advanced features will be added in an later update.
 :::
 
 When you are profiling a large application that uses a lot of external packages, you can quickly become overwhelmed by the amount of data CodeGlass shows. To solve this CodeGlass allows you to apply filters to your data. 

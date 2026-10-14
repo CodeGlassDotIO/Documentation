@@ -29,7 +29,7 @@ In the `.vscode` folder of the project that you want to run, create a `launch.js
 }
 ```
 
-For the command, you have to provide the full path to your CodeGlass Julia executable. The sample script shows the relative path from the [Engine](../../intro#engine), so replace that with your actual path to the engine.
+For the command, you have to provide the full path to your CodeGlass Julia executable. The sample script shows the relative path from the [Engine](../../intro#engine), so replace that with your actual path to the Engine.
 
 For the CG_TOKEN, you have to provide the application token that you can find in the [start instructions](../../views/general/instance-list#start-instructions).
 If you want to further configure the behavior, you can also specify any of the environment variables described [here](./installation-and-usage#environment-variables).

@@ -8,7 +8,7 @@ description: "The CodeGlass client register screen"
 ![Register page image](./img/register/Register.png)
 
 To register for the trial license of CodeGlass, you will need to enter your email address. Once you have successfully registered your account, your password will be sent to your email address. 
-You will need this password when connecting to CodeGlass through the [login page](./login.md), to which you will be redirected after your registration is successful.
+You will need this password when connecting to CodeGlass through the [login page](./login), to which you will be redirected after your registration is successful.
 
 If you experience any trouble creating an account, feel free to [contact](/contact) us.
 

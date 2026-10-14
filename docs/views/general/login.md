@@ -28,4 +28,4 @@ If you forgot your password, you can click the **Forgot password** link. This op
 ## Auto Login
 After a successful login, CodeGlass will try to automatically log you in the next time you open or reload the page.
 
-This automatic login works as long as the Engine is still running. If the Engine is stopped or restarted, you will need to log in again.
+This automatic login works as long as the [Engine](../../intro#engine) is still running. If the Engine is stopped or restarted, you will need to log in again.

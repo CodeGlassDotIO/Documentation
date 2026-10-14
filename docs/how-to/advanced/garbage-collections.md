@@ -13,7 +13,7 @@ This post will go into:
 - The solution for the example
 
 :::info
-This _How To_ assumes that you already have CodeGlass fully [setup](../../category/getting-started), and that you have already [created an application](../../views/general/application-list#add-application).
+This _How To_ assumes that you already have CodeGlass fully [setup](../../getting-started/), and that you have already [created an application](../../views/general/application-list#add-application).
 :::
 
 ## Recommended Settings

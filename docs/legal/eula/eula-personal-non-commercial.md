@@ -78,7 +78,7 @@ This Agreement applies whether you purchase a Subscription directly from CodeGla
 # 5. ACCESS TO PRODUCTS
 5.1. All deliveries under this Agreement will be electronic. You must have an Internet connection in order to access your CodeGlass Account and receive any deliveries. You are responsible for downloading and installing the Products, which are made available for download on the CodeGlass website at [https://codeglass.io](https://codeglass.io).
 
-5.2 You may use the CGA in accordance with the CodeGlass Account Agreement available at [https://julia.codeglass.io/docs/account](../../account/account.md). You are solely responsible for the accuracy of any information provided via, and any action taken through, the CGA.
+5.2 You may use the CGA in accordance with the CodeGlass Account Agreement available at [https://julia.codeglass.io/docs/account](../../account). You are solely responsible for the accuracy of any information provided via, and any action taken through, the CGA.
 
 5.3 You may activate and access Products in the following way:
 
@@ -86,7 +86,7 @@ This Agreement applies whether you purchase a Subscription directly from CodeGla
 
 
 # 6. FEES
-6.1. Customer shall pay Subscription fees in accordance with the CodeGlass Terms and Conditions of Purchase (available at [https://julia.codeglass.io/docs/legal/terms](../terms.md)) or an authorized CodeGlass BV reseller’s terms of purchase, whichever are applicable.
+6.1. Customer shall pay Subscription fees in accordance with the CodeGlass Terms and Conditions of Purchase (available at [https://julia.codeglass.io/docs/legal/terms](../terms)) or an authorized CodeGlass BV reseller’s terms of purchase, whichever are applicable.
 
 6.2. The Subscription fees must be paid in full, and any levies, duties, and/or taxes imposed by Customer’s jurisdiction (including, but not limited to, value added tax, sales tax, and withholding tax) shall be borne solely by Customer. Customer may not deduct any amounts from fees payable to CodeGlass BV or an authorized CodeGlass BV reseller, unless otherwise specified in the applicable terms of purchase.
 
@@ -99,7 +99,7 @@ Customer has no obligation to provide us with ideas, suggestions, contributions,
 8.2. Third-Party Components are licensed, not sold, and remain the property of their respective licensors.
 
 8.3. A list of Third-Party Components included in each Product may be provided in the Product documentation and/or at:
-[https://julia.codeglass.io/docs/legal/third-party-licenses](../third-party-licenses.md)
+[https://julia.codeglass.io/docs/legal/third-party-licenses](../third-party-licenses)
 
 8.4. You may use Third-Party Components only as incorporated into the Product and in connection with your permitted use of the Product under this Agreement.
 
@@ -133,7 +133,7 @@ Customer has no obligation to provide us with ideas, suggestions, contributions,
 # 11. TERM AND TERMINATION
 11.1. The term of this Agreement will commence upon acceptance of this Agreement by Customer as set forth in the preamble above, and it will continue for each Product through the end of the applicable Subscription period specified in the respective Subscription Confirmation. The Subscription and this Agreement will automatically renew in respect to each Product for a successive Subscription period, unless terminated in accordance with this Agreement.
 
-11.2. You may terminate this Agreement at any time by cancelling your Product Subscription via your CodeGlass Account. If such termination occurs during a Subscription period, this Agreement will continue to be effective until the end of that Subscription period. Such termination does not relieve you of the obligation to pay any outstanding Subscription fees owed to CodeGlass, and no credits or refunds will be issued to you for prepaid Subscription fees (except as specified in CodeGlass' Terms of Purchase available at: [https://julia.codeglass.io/docs/legal/terms](../terms.md), if applicable).
+11.2. You may terminate this Agreement at any time by cancelling your Product Subscription via your CodeGlass Account. If such termination occurs during a Subscription period, this Agreement will continue to be effective until the end of that Subscription period. Such termination does not relieve you of the obligation to pay any outstanding Subscription fees owed to CodeGlass, and no credits or refunds will be issued to you for prepaid Subscription fees (except as specified in CodeGlass' Terms of Purchase available at: [https://julia.codeglass.io/docs/legal/terms](../terms), if applicable).
 
 11.3. CodeGlass BV may terminate this Agreement and the associated Subscription if:
 
@@ -172,7 +172,7 @@ Customer has no obligation to provide us with ideas, suggestions, contributions,
 13.2. Customer must immediately report any concerns of non-compliance regarding Sanctions to support@codeglass.io, and cooperate with CodeGlass BV in its efforts to verify and ensure compliance with Sanctions.
 
 # 14. GENERAL
-14.1. <b>Entire Agreement.</b> The following documents are part of (‘incorporated into’) this Agreement: the CodeGlass Privacy Policy, available at [https://julia.codeglass.io/docs/legal/privacy](../privacy.md) and the CodeGlass Terms and Conditions of Purchase, available at [https://julia.codeglass.io/docs/legal/terms](../terms.md). Together, these documents form the entire agreement and replace any previous agreement between you and us in relation to its subject matter. Except as expressly mentioned, this Agreement does not apply or give rights to anyone else (‘no third-party beneficiaries’). No purchase order, Customer terms, or other document that purports to modify or supplement this Agreement will vary the terms of this Agreement unless signed by Customer and CodeGlass BV.
+14.1. <b>Entire Agreement.</b> The following documents are part of (‘incorporated into’) this Agreement: the CodeGlass Privacy Policy, available at [https://julia.codeglass.io/docs/legal/privacy](../privacy) and the CodeGlass Terms and Conditions of Purchase, available at [https://julia.codeglass.io/docs/legal/terms](../terms). Together, these documents form the entire agreement and replace any previous agreement between you and us in relation to its subject matter. Except as expressly mentioned, this Agreement does not apply or give rights to anyone else (‘no third-party beneficiaries’). No purchase order, Customer terms, or other document that purports to modify or supplement this Agreement will vary the terms of this Agreement unless signed by Customer and CodeGlass BV.
 
 14.2. <b>Reservation of Rights.</b> CodeGlass BV reserves the right at any time to cease its support of the Product and to alter prices, features, specifications, capabilities, functions, terms of use, release dates, general availability, and other characteristics of the Product. Nothing in this Agreement limits any rights a consumer may have under applicable consumer protection laws.
 
@@ -211,11 +211,11 @@ Customer has no obligation to provide us with ideas, suggestions, contributions,
 
 (D) Where applicable, you may also have the right to use alternative dispute resolution mechanisms under EU or local law.
 
-14.11. <b>Data Privacy.</b> By accepting this Agreement, Customer acknowledges that CodeGlass BV will process personal data in accordance with CodeGlass’ Privacy Policy (available at [https://julia.codeglass.io/docs/legal/privacy](../privacy.md)).
+14.11. <b>Data Privacy.</b> By accepting this Agreement, Customer acknowledges that CodeGlass BV will process personal data in accordance with CodeGlass’ Privacy Policy (available at [https://julia.codeglass.io/docs/legal/privacy](../privacy)).
 
 14.12. <b>Force Majeure.</b> Neither Party shall be in breach of this Agreement, or otherwise liable to the other, by reason of any delay in performance, or non-performance, of any of its obligations under this Agreement (except payment obligations), arising directly from an act of God, fire, flood, natural disaster, act of terrorism, strike, lock-out, labor dispute, public health emergency, civil commotion, riot, or act of war.
 
-14.13. <b>Children and minors.</b> If You are under 18 years old, then by entering into this Agreement you explicitly stipulate that (i) you have legal capacity to conclude this Agreement or that you have valid consent from a parent or legal guardian to do so and (ii) you understand the CodeGlass Privacy Policy available at: [https://julia.codeglass.io/docs/legal/privacy](../privacy.md). You may not enter into this Agreement if you are under 13 years old. IF YOU DO NOT UNDERSTAND THIS SECTION, DO NOT UNDERSTAND THE CODEGLASS PRIVACY POLICY, OR DO NOT KNOW WHETHER YOU HAVE THE LEGAL CAPACITY TO ACCEPT THESE TERMS, PLEASE ASK YOUR PARENT OR LEGAL GUARDIAN FOR HELP.
+14.13. <b>Children and minors.</b> If You are under 18 years old, then by entering into this Agreement you explicitly stipulate that (i) you have legal capacity to conclude this Agreement or that you have valid consent from a parent or legal guardian to do so and (ii) you understand the CodeGlass Privacy Policy available at: [https://julia.codeglass.io/docs/legal/privacy](../privacy). You may not enter into this Agreement if you are under 13 years old. IF YOU DO NOT UNDERSTAND THIS SECTION, DO NOT UNDERSTAND THE CODEGLASS PRIVACY POLICY, OR DO NOT KNOW WHETHER YOU HAVE THE LEGAL CAPACITY TO ACCEPT THESE TERMS, PLEASE ASK YOUR PARENT OR LEGAL GUARDIAN FOR HELP.
 
 Previous versions of this Agreement may be made available upon request. We retain archived copies of prior versions for recordkeeping and dispute-resolution purposes.
 

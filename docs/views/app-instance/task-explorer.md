@@ -17,4 +17,4 @@ The **Task Detail** view shows the current call stack for the selected task.
 
 The call stack grows downward, with each row representing a function call.
 
-Double-clicking on a function in the stack opens the [Code Member](./codemember) view for that function.
+Double-clicking on a function in the stack opens the [*code member*](./codemember) view for that function.

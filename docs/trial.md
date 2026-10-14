@@ -6,7 +6,7 @@ sidebar_position: 7
 
 At the moment, we do not provide a portal for requesting a trial license. Instead, you can request one through the CodeGlass application. The steps below explain how to register for a trial.
 
-For more details on setting up CodeGlass on your computer, follow the instructions in [Getting Started](./category/getting-started) up to the [Register](./views/general/register) page.
+For more details on setting up CodeGlass on your computer, follow the instructions in [Getting Started](./getting-started) up to the [Register](./views/general/register) page.
 
 1. Download the **latest release** from the [CodeGlass GitHub repository](https://github.com/CodeGlassDotIO/CodeGlass).
 2. Extract the downloaded archive to a location on your system.

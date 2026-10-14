@@ -88,7 +88,7 @@ Here we can see that 4 functions were responsible for all these allocations.
 
 The first thing that triggered us here were the lambda functions. Lambda functions often have unexpected behavior, and issues like type instability can easily be created here. We can recognize lambda functions by the '#' characters around the function name.
 
-We can open the `#_to_time_slice##0` function in the [code member view](../../views/app-instance/codemember), to see exactly what was executed in this function.
+We can open the `#_to_time_slice##0` function in the [*code member* view](../../views/app-instance/codemember), to see exactly what was executed in this function.
 
 ![ToTimeSlice Pre Fix](./img/typed-functions-predictable-performance/ToTimeSlicePreFix.png)
 

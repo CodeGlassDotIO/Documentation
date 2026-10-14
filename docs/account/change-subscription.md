@@ -50,7 +50,7 @@ To reduce the number of licenses, use the Cancel Plan page instead.
 
 If you don't see a button to access your subscription:
 - Ensure you're using the correct email address.
-- If you're not the [License Manager](license-portal.md#license-manager), you must contact the person who granted your license.
+- If you're not the [License Manager](license-portal#license-manager), you must contact the person who granted your license.
 
 If you're unsure, feel free to [contact us](/contact).
 

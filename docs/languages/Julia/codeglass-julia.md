@@ -16,13 +16,13 @@ We have support for every version of Julia 1.12. This is also the version that c
 We currently have very basic support for Julia 1.10, but it hasn't been updated in a while. If you have a need for CodeGlass support on Julia 1.10, please [reach out](/contact) to us.
 
 ## Julia and Inlining
-Julia likes to inline a lot of your code. This is often great for performance, but this makes it very hard to analyze profiled code. The data provided by an agent will look nothing like the code you wrote. This can make it difficult to pin point where in the code the issues actually resides.
+Julia likes to inline a lot of your code. This is often great for performance, but this makes it very hard to analyze profiled code. The data provided by an [Agent](../../intro#agent) will look nothing like the code you wrote. This can make it difficult to pin point where in the code the issues actually resides.
 
 To solve this, CodeGlass Julia ships with multiple profiling presets that allow you to switch this behavior. 
 These presets are:
-- **Native**: Regular Julia, with CodeGlass profiling hooks. This preset profiles everything Julia does (with the exception of some [compatibility filters](#always-filtered)).
-- **Filtered**: Profiles everything except some [default packages](#default-filters).
-- **Filtered Without Inlining**: This is the same as **Filtered**, but it disables inlining on most functions. `@inline` is still respected.
+- **Native**: Profiles Julia with CodeGlass profiling hooks enabled throughout the runtime. This provides the most insight into Julia's compiler and internal functions. Some functions are still excluded by the [compatibility filters](#always-filtered).
+- **Filtered**: Profiles Julia with the [default filters](#default-filters) applied. This increases tracing speed by excluding functions that are from Julia itself.
+- **Filtered Without Inlining**: Same as **Filtered**, but disables inlining for most functions. This provides more detailed user-code information, as functions that would otherwise be inlined remain visible as separate functions. @inline is still respected.
 
 These different presets vary in the amount of detail, and the profiling performance you get.
 
@@ -70,4 +70,4 @@ If you think these filters filter our to much data, or that they do not filter e
 :::
 
 ## Advanced usage
-In most cases, starting Julia through the [client](../../intro#client) using the [Start Integration](../../views/general/instance-list#start-integration) button, is enough. For some more advanced cases, this just does not work. In these cases you can manually run Julia.
+In most cases, starting Julia through the [Client](../../intro#client) using the [Start Integration](../../views/general/instance-list#start-integration) button, is enough. For some more advanced cases, this just does not work. In these cases you can manually run Julia.

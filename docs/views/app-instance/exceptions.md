@@ -26,7 +26,7 @@ At the top you can see a header with basic information, such as the exception ty
 Sometimes the exception type starts with [TaskFailedException](https://docs.julialang.org/en/v1/base/base/#Base.TaskFailedException) followed by another exception type. This means that the entire task failed to execute because of the second exception.
 
 Below that you can see which function threw the exception and which function caught it.  
-Double clicking on these functions opens the [Code Member](./codemember) view for that function.
+Double clicking on these functions opens the [*code member*](./codemember) view for that function.
 
 :::info
 If CodeGlass did not collect the function that an exception occurred in, it shows `<<unknown id>>`. These items cannot be clicked to open.
@@ -41,4 +41,4 @@ The screen is split into 2 parts:
 - **Code Body Reconstruction:** Shows the [Code Body Reconstruction](./codemember#code-body-reconstruction) view for the function you have selected from the call stack. This also shows on what line the exception occured.
 
 Clicking on an item in the task call stack updates the [Code Body Reconstruction](./codemember#code-body-reconstruction) view for that function.
-Double-clicking on an item opens the [Code Member](./codemember) screen for this function.
+Double-clicking on an item opens the [*code member*](./codemember) screen for this function.

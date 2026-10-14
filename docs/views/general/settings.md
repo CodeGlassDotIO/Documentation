@@ -8,7 +8,7 @@ In CodeGlass, there are three different levels of settings. First, you have the 
 
 Next, the [application settings](./instance-list#settings) can be configured for each new instance created within that application.
 
-Finally, you can view the [instance settings](../app-instance/application-instance#settings-gear-icon) for each instance. These settings cannot be changed, as they are defined at startup.
+Finally, you can view the [instance settings](../app-instance#settings-gear-icon) for each instance. These settings cannot be changed, as they are defined at startup.
 
 ![Application Settings](./img/settings/Settings.png)
 
@@ -18,9 +18,27 @@ Each setting lists the languages it supports. If an application does not support
 
 ### Start
 
-#### Additional Arguments
+#### Start Arguments
 
-Arguments that will be included in the [start instructions](./instance-list#start-instructions) of your application.
+Here you can set all the arguments that should be used when starting your application. You can place each argument on a separate row or place all arguments on one line.
+
+You can see the command that will be used to start your application on the [start instructions](./instance-list#start-instructions) popup. Here you can validate that your arguments are applied correctly.
+
+:::info
+CodeGlass places the arguments in the start instructions in the order that you placed them on the settings screen. If the order is important, you can drag and drop each argument to the correct place using the 6 dots on the side.
+:::
+
+#### Environment Variables
+
+Here you can set all the environment variables that should be set when starting your application. Each variable is placed on a separate row, with the left field destined for the name, and the right one for its value. CodeGlass will automatically add `export` in front of it when needed. Note that no input validation is performed on the name or value of the environment variable, meaning you might need to escape special characters.
+
+You can see the command that will be used to start your application on the [start instructions](./instance-list#start-instructions) popup. Here you can validate that your variables are applied correctly.
+
+You can also add [CodeGlass environment variables](../../languages/Julia/installation-and-usage#environment-variables) (such as `CG_PAUSE_DATA_COLLECTION_ON_START`) to the environment variables in the settings menu, but note that overriding `CG_TOKEN` may cause undefined behavior.
+
+:::info
+CodeGlass places the environment variables in the start instructions in the order that you placed them on the settings screen. If the order is important, you can drag and drop each variable to the correct place using the 6 dots on the side.
+:::
 
 #### Working Directory Override
 
@@ -30,13 +48,13 @@ CodeGlass will try to set its correct working directory, but this can be overrid
 
 When enabled, your application will be paused at the start.
 
-You can continue the application through the [toolbar](../app-instance/application-instance#pause--continue-application) on the [instance screen](../app-instance/application-instance).
+You can continue the application through the [toolbar](../app-instance#pause--continue-application) on the [instance screen](../app-instance).
 
 #### Pause Data Collection On Start
 
 When enabled, the agent will start with [**data collection paused**](../../concepts-and-features/pause-data-collection). No data is sent to the Engine until data collection is manually enabled again.
 
-You can enable data collection through the [toolbar](../app-instance/application-instance#pause--continue-data-collection) on the [instance screen](../app-instance/application-instance).
+You can enable data collection through the [toolbar](../app-instance#pause--continue-data-collection) on the [instance screen](../app-instance).
 
 You can also enable data collection through the builtin [CodeGlass Julia package](../../languages/Julia/codeglass-jl#pausecontinue-data-collection).
 
@@ -56,15 +74,9 @@ When enabled, the [Agent](../../intro#agent) will listen for memory allocation e
 
 #### Include Deallocations
 
-When enabled, the agent will track garbage collection and deallocation events and send them to the Engine.
+When enabled, the Agent will track garbage collection and deallocation events and send them to the Engine.
 
 *This option is only available when Memory Profiling is enabled.*
-
-### Experimental Features
-
-#### Disable Realtime Renderers
-
-When checked, it will stop the data collection for the realtime renderers. This will improve the speed at which CodeGlass can process data.
 
 ### Garbage Collections
 
@@ -78,11 +90,49 @@ This value controls how many garbage collections CodeGlass keeps in its history,
 
 Exceptions can contain a lot of data. By setting this value, you tell CodeGlass how many exceptions it should keep stored in its history.
 
-### Callstack
+### Profiled Event History
 
-#### Maximum Of Stored Callstack History
+#### Enable Realtime Renderers
 
-By setting this value, you tell CodeGlass how many items it should keep stored in its callstack history.
+When checked, it will start the data collection for the realtime renderers. This will decrease the speed at which CodeGlass can process data, and reserve a certain amount of [memory](#total-memory-reserved) to store this.
+
+#### Reserved megabytes per exception
+
+How many megabytes will be reserved per exception in the history. When an exception has not occured yet, this memory will be used for normal history.
+
+*This option is only available when Realtime Renderers is enabled.*
+
+#### Reserved megabytes for history
+
+How many megabytes are reserved for the history.
+
+*This option is only available when Realtime Renderers is enabled.*
+
+#### Total memory reserved
+
+This is a calculated field, that shows you how much memory CodeGlass reserves for the event history. The calculation is as follows: 
+
+[Maximum exceptions history](#maximum-exceptions-history) * [reserved megabytes per exception](#reserved-megabytes-per-exception) + [reserved megabytes for history](#reserved-megabytes-for-history) + reserved megabytes for system.
+The last added memory is required for the event history system to function, and is ~176mb.
+
+:::note
+This memory will only be claimed on your machine once the events actually occur and are stored in history.
+:::
+
+*This option is only available when Realtime Renderers is enabled.*
+
+#### Total history duration
+
+This is a calculated field, that shows you how much far back the history is kept for the amount of [reserved memory](#total-memory-reserved). This is calculated based on 1_000_000 events per second, so you can adjust it based on the actual event speed of your application. 
+
+:::note
+This number includes history duration for exceptions. If the exceptions happened outside of the normal history, the history you can step back to in the renderers will be shorter.
+:::
+:::note
+Since we can't predict what events will occur, this is a worst case estimation. This means the true number will practically always be higher.
+:::
+
+*This option is only available when Realtime Renderers is enabled.*
 
 ### Julia
 
@@ -93,13 +143,13 @@ These presets are described [here](../../languages/Julia/codeglass-julia#julia-a
 
 ### .NET
 
-#### Disable All Code Optimizations
+#### Enable All Code Optimizations
 
-When checked, it will disable all code optimizations done by the runtime/compiler.
+When checked, it will enable all code optimizations done by the runtime/compiler.
 
-#### Disable All Function Inlining
+#### Enable All Function Inlining
 
-When checked, it will disable all function inlining done by the runtime/compiler.
+When checked, it will enable all function inlining done by the runtime/compiler.
 
 #### Experimental hooks
 
@@ -112,11 +162,11 @@ When checked, it will use experimental hooks.
 
 #### Automatic Engine Shutdown
 
-When enabled, the engine will shutdown when there are no active connections to agents and clients left.
+When enabled, the Engine will shutdown when there are no active connections to Agents and Clients left.
 
 #### Register Engine For Starting Through Browser
 
-Whenever the engine is shut down, attempting to log in via the browser will start it back up.
+Whenever the Engine is shut down, attempting to log in via the browser will start it back up.
 
 When enabled, a registry entry (Windows), a desktop entry (Linux), or an app bundle (macOS) will be created.  
 When disabled, the registry entry (Windows), the desktop entry (Linux), or the app bundle (macOS) will be removed.  
@@ -125,7 +175,7 @@ When disabled, the registry entry (Windows), the desktop entry (Linux), or the a
 
 #### Serve Client Over HTTPS
 
-By default, the client is served over HTTP and is only accessible from the same machine. This is because a signed certificate is required to serve content over HTTPS.
+By default, the [Client](../../intro#client) is served over HTTP and is only accessible from the same machine. This is because a signed certificate is required to serve content over HTTPS.
 
 If you want to connect remotely to the Engine, you need to enable HTTPS with this setting. This change will take effect the next time the [Engine](../../intro#engine) is started and will cause the browser to display a warning prompting the user to accept the self-signed certificate.
 
@@ -179,12 +229,12 @@ For the examples above:
 Set if CodeGlass should use PowerShell as fallback shell if no default system shell could be used to launch an application.
 
 When you click on the [Start Integration](../general/instance-list#start-integration) button, the [Engine](../../intro#engine) tries to start you application in a new shell instance.
-For terminal based applications, like Julia, this can have the problem that it starts in the same shell as the engine was started in (as the system sees it as a child process). 
+For terminal based applications, like Julia, this can have the problem that it starts in the same shell as the Engine was started in (as the system sees it as a child process). 
 
 This problem can be solved, by starting a new instance of your shell, and running the application in there. 
 But there is no native cross-platform way of starting a new shell. To fix the issue, CodeGlass ships with PowerShell build in.
 When CodeGlass could not start an instance of your native shell, and this option is enabled, CodeGlass starts a PowerShell and starts your application in there.
-If this option is disabled, CodeGlass will still try and start your application, but it might start in in the same shell as the engine is currently running.
+If this option is disabled, CodeGlass will still try and start your application, but it might start in in the same shell as the Engine is currently running.
 
 ## Client
 

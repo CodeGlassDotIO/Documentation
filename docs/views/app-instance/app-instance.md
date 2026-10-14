@@ -12,14 +12,16 @@ When you open an **application instance**, this is the first page you see.
 From here you can navigate to all other views and tools available for this instance.
 
 These are all the current available tools and views in CodeGlass:
-- [Function Statistics](./statistics)
-- [Memory Statistics](./memory-statistics)
-- [Heat Map](./heat-map)
-- [Performance view](./performance)
-- [Application Explorer](./application-explorer)
-- [Task Explorer](./task-explorer)
-- [Exception Explorer](./exceptions)
-- [Garbage Collection Explorer](./garbage-collections)
+- [Function Statistics](app-instance/statistics)
+- [Code Member List](app-instance/codemember-list)
+- [Memory Statistics](app-instance/memory-statistics)
+- [Heat Map](app-instance/heat-map)
+- [Performance view](app-instance/performance)
+- [Application Explorer](app-instance/application-explorer)
+- [Task Explorer](app-instance/task-explorer)
+- [Exception Explorer](app-instance/exceptions)
+- [Garbage Collection Explorer](app-instance/garbage-collections)
+- [Dashboard](app-instance/dashboard)
 
 ## Open Instances
 
@@ -38,8 +40,8 @@ You can also view the settings which the instance used at startup.
 
 ![Instance Menu File](./img/application-instance/InstanceMenu_File.png)
 
-The **File** menu contains options for importing [Dump Files](../../concepts-and-features/dumpfiles) and exporting Dump Files and CSV files.   
-You can also check the three different levels of [settings](../general/settings).
+The **File** menu contains options for importing [*dump files*](../concepts-and-features/dumpfiles) and exporting *dump files* and CSV files.   
+You can also check the three different levels of [settings](./general/settings).
 
 ### View
 
@@ -64,45 +66,45 @@ The **Help** menu provides links to documentation and support pages.
 
 ![Instance Settings](./img/application-instance/InstanceSettings.png)
 
-This view shows what [**Settings**](../general/settings) were used on the startup of this instance. These settings cannot be changed.
+This view shows what [**Settings**](./general/settings) were used on the startup of this instance. These settings cannot be changed.
 
 ## Toolbar
 
 ![Toolbar](./img/application-instance/Toolbar.png)
 
 The **toolbar** is the main control panel for the current instance.  
-From here you can control the [Agent](../../intro#agent) and quickly access commonly used features.
+From here you can control the [Agent](../intro#agent) and quickly access commonly used features.
 
 The items below explain each item in the toolbar from left to right.
 
 ### Create Dump File
 :::info
-This functionality can also be called from the running application, such as in Julia using [CodeGlass.create_dump_file()](../../languages/Julia/codeglass-jl#creating-dump-files). 
+This functionality can also be called from the running application, such as in Julia using [CodeGlass.create_dump_file()](../languages/Julia/codeglass-jl#creating-dump-files). 
 :::
-This button creates a [**dump file**](../../concepts-and-features/dumpfiles) containing all collected profiling data up to that moment. The file is automatically downloaded to your computer.
+This button creates a [*dump file*](../concepts-and-features/dumpfiles) containing all collected profiling data up to that moment. The file is automatically downloaded to your computer.
 
-Dump files can later be uploaded again using the buttons on the [Application List](../general/application-list#add-dump-files) screen, the [Instance List](../general/instance-list#add-dump-files) screen, or by dragging and dropping the file onto any page.
+Dump files can later be uploaded again using the buttons on the [Application List](./general/application-list#add-dump-files) screen, the [Instance List](./general/instance-list#add-dump-files) screen, or by dragging and dropping the file onto any page.
 
-Each dump file is **fully self-contained**, so it can also be shared with other users who can open it on their own system.
+Each *dump file* is **fully self-contained**, so it can also be shared with other users who can open it on their own system.
 
 :::warning
-Keep in mind that our dump files are very **detailed** and include a lot about your application, you might not want to share it with just any one.
+Keep in mind that our *dump files* are very **detailed** and include a lot about your application, you might not want to share it with just any one.
 :::
 
 
 ### Pause / Continue Data Collection
-This button pauses or resumes data collection by the agent. While paused, the agent stops sending data to the [Engine](../../intro#engine).
+This button pauses or resumes data collection by the Agent. While paused, the Agent stops sending data to the [Engine](../intro#engine).
 
-More information about this feature can be found [here](../../concepts-and-features/pause-data-collection).
+More information about this feature can be found [here](../concepts-and-features/pause-data-collection).
 
 :::info
 Pausing data collection can improve the performance of the application being inspected by CodeGlass.
 :::
 
 :::warning
-When data collection is resumed, the agent immediately starts sending data again. CodeGlass may interpret this as if the next function call happened directly after the last one before the pause. This can reduce the accuracy of some statistics.
+When data collection is resumed, the Agent immediately starts sending data again. CodeGlass may interpret this as if the next function call happened directly after the last one before the pause. This can reduce the accuracy of some statistics.
 
-More information about what to look out for can be found [here](../../concepts-and-features/pause-data-collection).
+More information about what to look out for can be found [here](../concepts-and-features/pause-data-collection).
 :::
 
 ### Pause / Continue Application
@@ -142,7 +144,8 @@ Restart only works for applications made using the **Julia REPL** or **Julia Pro
 ![Recording Side bar](./img/application-instance/RecordingSideBar.png)
 This button opens the **recording sidebar**.
 
-From this panel you can start, stop, and manage [recordings](../../concepts-and-features/datasources#recordings). Recordings allow you to capture specific parts of a profiling session and analyze them separately.
+From this panel you can start, stop, and [view](app-instance/dashboard) recordings. [Recordings](../concepts-and-features/datasources#recordings) allow you to capture specific parts of a profiling session and analyze them separately. 
+Recordings started using [the CodeGlass package](../languages/Julia/codeglass-jl#recordings) also show up here.
 
 You can also compare recordings with each other to see how behavior changes between runs.
 
@@ -151,5 +154,5 @@ You can also compare recordings with each other to see how behavior changes betw
 
 After creating recordings, you can select one from the dropdown menu here to use as a **comparison source**.
 
-The running instance is considered the **main data source**, while each recording acts as an additional data source that can be compared against it. 
-Comparing data sources results in the statistics of the **comparison source** being subtracted from the **selected source**. This means statistics can show as negative.
+The running instance is considered the **main data source**, while each recording acts as an additional *data source* that can be compared against it. 
+Comparing *data sources* results in the statistics of the **comparison source** being subtracted from the **selected source**. This means statistics can show as negative.

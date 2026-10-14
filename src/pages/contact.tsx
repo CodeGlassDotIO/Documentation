@@ -22,14 +22,20 @@ export default function Home(): ReactNode {
 
         script.onerror = () => {
             const msg = document.createElement("p");
-            msg.innerText = "Contact form is not available on the local documentation. Please go to the live ";
 
-            const link = document.createElement("a");
-            link.href = "https://julia.codeglass.io/contact";
-            link.target = "_blank";
-            link.innerText = "contact form.";
+            if (window.location.hostname === "julia.codeglass.io") {
+                msg.innerText = "Contact form failed to load. Please reload to page to try again. If this issues still occurs, please validate that you have no extension installed that could block the form from loading";
+            }
+            else {
+                msg.innerText = "Contact form is not available on the local documentation. Please go to the live ";
 
-            msg.appendChild(link);
+                const link = document.createElement("a");
+                link.href = "https://julia.codeglass.io/contact";
+                link.target = "_blank";
+                link.innerText = "contact form.";
+
+                msg.appendChild(link);
+            }
 
             const formDiv = document.getElementById("hubspot-form")
             formDiv!.appendChild(msg);

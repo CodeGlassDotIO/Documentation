@@ -12,7 +12,7 @@ This post will go into:
 - What views can be used
 
 :::info
-This *How To* assumes that you already have CodeGlass fully [setup](../../category/getting-started), and that you have already [created an application](../../views/general/application-list#add-application).
+This *How To* assumes that you already have CodeGlass fully [setup](../../getting-started/), and that you have already [created an application](../../views/general/application-list#add-application).
 :::
 
 ## How To Turn On Memory Profiling
@@ -32,7 +32,7 @@ The next time you start a new instance, memory profiling will be enabled, and th
 
 ## Memory Views
 
-There are multiple [views](../../views/app-instance/application-instance#view) where you can inspect the collected memory profiling data. In this section, we explain four different ways to analyze this data. On every view you have the option to sort on a statistic.
+There are multiple [views](../../views/app-instance#view) where you can inspect the collected memory profiling data. In this section, we explain four different ways to analyze this data. On every view you have the option to sort on a statistic.
 
 If you are experiencing issues with excessive memory allocation, we recommend sorting by *Exclusive Allocations* and/or *Exclusive Bytes Allocated* to identify which functions allocate the most memory.
 
@@ -62,6 +62,6 @@ Next up is the [memory statistics view](../../views/app-instance/memory-statisti
 
 ### Memory Object Statistics
 
-Each memory object shown in a view can be double-clicked to navigate to the [memory object statistics view](../../views/app-instance/mem-object-allocator-statistics). This view provides a clear overview of which functions allocated that memory object and even the [code paths](../../concepts-and-features/code-path) within each function.
+Each memory object shown in a view can be double-clicked to navigate to the [memory object statistics view](../../views/app-instance/mem-object-allocator-statistics). This view provides a clear overview of which functions allocated that memory object and even the [*code paths*](../../concepts-and-features/code-path) within each function.
 
 ![Memory Object Statistics View](./img/memory-profiling/memory-object-statistics-view.png)

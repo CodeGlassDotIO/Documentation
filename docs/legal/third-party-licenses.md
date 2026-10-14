@@ -31,7 +31,7 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 end of terms and conditions
 
-Please see [THIRDPARTY.md](https://github.com/JuliaLang/julia/blob/master/THIRDPARTY.md) for license information for other software used in this project.
+Please see [THIRDPARTY](https://github.com/JuliaLang/julia/blob/master/THIRDPARTY) for license information for other software used in this project.
 
 ## Dockview  
 

@@ -27,15 +27,15 @@ export enum LicenseFeatures {
 
 const ALL_FEATURES = [
   { key: LicenseFeatures.PerformanceProfiling, label: "Performance Profiling", 
-    description: "Analyze application performance at the function and module level with detailed runtime statistics. The codemember view provides line-by-line execution analysis, callsite tracking, and runtime behavior inspection, while the heatmap view visualizes hot paths to help identify performance bottlenecks quickly." },
+    description: "Analyze application performance at the function and module level with detailed runtime statistics. The code member view provides line-by-line execution analysis, callsite tracking, and runtime behavior inspection, while the heatmap view visualizes hot paths to help identify performance bottlenecks quickly." },
   { key: LicenseFeatures.MemoryProfiling, label: "Memory Profiling", 
-    description: "Inspect memory allocations across functions and object types with detailed allocation statistics and object lifetime visibility. Allocation sources can be traced directly within the codemember view to simplify memory optimization and leak investigation." },
+    description: "Inspect memory allocations across functions and object types with detailed allocation statistics and object lifetime visibility. Allocation sources can be traced directly within the code member view to simplify memory optimization and leak investigation." },
   { key: LicenseFeatures.GarbageCollections, label: "Garbage Collection Tracking", 
     description: "Monitor garbage collection activity and detailed deallocation analysis. Inspect collected objects and allocation patterns to identify excessive GC pressure and optimize runtime memory behavior." },
   { key: LicenseFeatures.CustomJuliaPackage, label: "Custom Julia Package", 
     description: "Integrate CodeGlass directly into your Julia workflows using our Custom Julia Package. Automate recordings, manage dump files, and control data collection programmatically from your application code." },
   { key: LicenseFeatures.Experimental, label: "Experimental Features", 
-    description: "Access advanced functionality currently under active development. Experimental features include call tree and call stack visualization, along with datasource comparison for analyzing behavioral and statistical differences between profiling sessions." },
+    description: "Access advanced functionality currently under active development. Experimental features include call tree and call stack visualization, along with data source comparison for analyzing behavioral and statistical differences between profiling sessions." },
   { key: LicenseFeatures.DumpFiles, label: "Dump Files", 
     description: "Export complete profiling sessions into portable dump files containing all collected runtime data. Dump files can be archived, shared with team members, or reopened later for additional investigation and analysis." },
   { key: LicenseFeatures.CSV, label: "CSV Export", 

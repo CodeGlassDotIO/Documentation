@@ -2,9 +2,9 @@
 
 A lot of the detail you see in CodeGlass comes from something called **code paths**.
 
-Instead of only telling you that a function is slow, CodeGlass tries to show *where* inside that function things slow down. That is what code paths are used for.
+Instead of only telling you that a function is slow, CodeGlass tries to show *where* inside that function things slow down. That is what *code paths* are used for.
 
-A code path is built from three pieces:
+A *code path* is built from three pieces:
 
 - the function itself  
 - the function that was called just before it  
@@ -16,7 +16,7 @@ So it is not just “this function ran”, but more like “this function ran he
 
 In the screenshot below (from the [code body statistics](../views/app-instance/codemember#code-body-statistics) view), we look at a function called `ForLoopDifferentOutcomes`.
 
-Its code path looks like this:
+Its *code path* looks like this:
 
 - `ForLoopDifferentOutcomes` → the function itself  
 - `rand` → the function that ran just before  
@@ -24,11 +24,11 @@ Its code path looks like this:
 
 ![Code Path](./img/CodePath.png)
 
-Whenever CodeGlass shows stats for a code path, it means it is tied to that exact situation.
+Whenever CodeGlass shows stats for a *code path*, it means it is tied to that exact situation.
 
 ## Same Function, Different Paths
 
-Calling the same function twice does not always mean it is the same code path.
+Calling the same function twice does not always mean it is the same *code path*.
 
 ```julia
 function parent_function()
@@ -44,11 +44,11 @@ Here, `b` is called twice. Both calls are inside `parent_function`, but:
 - the first call happens after `a`  
 - the second call happens after `c`  
 
-That makes them two separate code paths.
+That makes them two separate *code paths*.
 
 ## When Paths Look the Same
 
-Sometimes different flows end up sharing the same code path.
+Sometimes different flows end up sharing the same *code path*.
 
 ```julia
 function parent_function()
@@ -66,7 +66,7 @@ Even though the work is very different, both calls:
 - happen after `a`  
 - belong to `parent_function`  
 
-So CodeGlass treats them as the same code path and combines the stats.  
+So CodeGlass treats them as the same *code path* and combines the stats.  
 This can hide big differences, like one call being fast and the other being very slow.
 
 ## Dynamic Dispatch and Extra Paths
@@ -85,7 +85,7 @@ add_one(1.0)
 This looks like only one function is called in this function, but in practice there may be multiple versions of `+` depending on the type of the value `x`.
 In this case, Julia can decide to use a version of `+` that supports a float and an int.
 
-As CodeGlass treats each of these as separate functions, this means you end up with more code paths than you expect.
+As CodeGlass treats each of these as separate functions, this means you end up with more *code paths* than you expect.
 
 This is also why the [code body reconstruction](../views/app-instance/codemember#code-body-reconstruction) is not a direct copy of your source code, but why it shows what actually ran.
 
@@ -103,7 +103,7 @@ end
 
 The array allocation happens between `a` and `b`. Since it is not a function call, CodeGlass attaches that time and allocation to the next function, which is `b`.
 
-So the code path for `b` includes:
+So the *code path* for `b` includes:
 
 - time spent after `a`  
 - the allocation of the array  
@@ -111,9 +111,9 @@ So the code path for `b` includes:
 
 ## What Happens With Filters
 
-If you have applied a [filter](./filters), the timings of the filtered function is also included in the code path, just like time spend between the calls.
-If a function is filtered, CodeGlass doesn't know about it, and therefore cannot make a code path for it.
-To fix this, those timings are included in the next functions code path.
+If you have applied a [filter](./filters), the timings of the filtered function is also included in the *code path*, just like time spend between the calls.
+If a function is filtered, CodeGlass doesn't know about it, and therefore cannot make a *code path* for it.
+To fix this, those timings are included in the next functions *code path*.
 
 ```julia
 function parent_function()
@@ -133,7 +133,7 @@ This is similar to what happens when Julia inlines a function. The inlined funct
 
 CodeGlass also tracks **return code paths**.
 
-These are similar to normal code paths, but instead of pointing to a function, they point to a return.
+These are similar to normal *code paths*, but instead of pointing to a function, they point to a return.
 
 They do not include timing data, because a return itself does not take time.
 

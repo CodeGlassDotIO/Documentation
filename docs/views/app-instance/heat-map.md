@@ -20,7 +20,7 @@ Above the heat map there is a toolbar. These options control how the heat map di
 - **Auto sort**: when enabled, the heat map automatically reorders items when you change the statistic, or when new functions get profiled.
 - **Sidebar**: toggles the [sidebar](#sidebar) on or off.
 - **Recenter**: moves the heat map back to the center. Useful if you zoomed or dragged the view too far.
-- **Data source selection**: select which [data source](../../concepts-and-features/datasources) the heat map should use.
+- **Data source selection**: select which [*data source*](../../concepts-and-features/datasources) the heat map should use.
 
 ## Sidebar
 
@@ -28,6 +28,6 @@ The sidebar shows the same data as the heat map, but in a list. Keep in mind tha
 
 ## Controls
 
-You can move around the heat map by clicking and dragging with the mouse. Double clicking on any of the functions opens the [Code Member](./codemember) screen of this function.
+You can move around the heat map by clicking and dragging with the mouse. Double clicking on any of the functions opens the [*code member*](./codemember) screen of this function.
 
 Use **Ctrl + Scroll** to zoom in and out.

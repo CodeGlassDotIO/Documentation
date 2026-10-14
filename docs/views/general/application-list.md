@@ -31,7 +31,7 @@ We currently support Julia and .NET applications. This documentation primarily t
 
 After selecting the application type, enter a **name** for the application.
 
-*If you have selected **Julia Project**, you will also have to enter the full path to the Project.toml.*
+If you want to use a Julia Project, you can provide the path to the project folder or the path to the Project.toml file. You can change the working directory and project file path at a later point in the [application settings](./settings#start-arguments).
 
 After filling in a name for your application, you get the choose some basic settings for your application. 
 You can always change these later in the [application settings](./instance-list#settings).
@@ -43,10 +43,10 @@ When you are done, you can press the **Create** button. This will create the new
 
 ### Add Dump Files
 
-CodeGlass can export all collected profiling data into [**dump file**](../../concepts-and-features/dumpfiles).  
-You can upload these dump files by clicking this button.
+CodeGlass can export all collected profiling data into [*dump file*](../../concepts-and-features/dumpfiles).  
+You can upload these *dump files* by clicking this button.
 
-Dump files can also be uploaded by **dragging and dropping them** onto any page in the [Client](../../intro#client).
+*Dump files* can also be uploaded by **dragging and dropping them** onto any page in the [Client](../../intro#client).
 
 ![Uploading Dump file](./img/application-list/UploadingDumpfile.png)
 

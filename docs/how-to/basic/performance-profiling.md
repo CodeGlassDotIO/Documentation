@@ -15,7 +15,7 @@ This post will go into:
 - What to look for
 
 :::info
-This _How To_ assumes that you already have CodeGlass fully [setup](../../category/getting-started), and that you have already [created an application](../../views/general/application-list#add-application).
+This _How To_ assumes that you already have CodeGlass fully [setup](../../getting-started), and that you have already [created an application](../../views/general/application-list#add-application).
 :::
 
 ## Suggested Settings
@@ -33,12 +33,12 @@ Below are some settings we suggest using (or at least reviewing) when doing gene
 ### Pause Data Collection At Start
 This is an optional setting that can be useful when running a large application and you are only interested in profiling a small portion of it.
 
-When enabled, the [agent](../../intro#agent) does not send profiling data to the [engine](../../intro#engine), reducing CodeGlass overhead to a minimum. When you reach the point where profiling is needed, you can re-enable data collection using the [client](../../views/app-instance/application-instance#pause--continue-data-collection) or the [CodeGlass.jl](../../languages/Julia/codeglass-jl#pausecontinue-data-collection) package.
+When enabled, the [Agent](../../intro#agent) does not send profiling data to the [Engine](../../intro#engine), reducing CodeGlass overhead to a minimum. When you reach the point where profiling is needed, you can re-enable data collection using the [Client](../../views/app-instance#pause--continue-data-collection) or the [CodeGlass.jl](../../languages/Julia/codeglass-jl#pausecontinue-data-collection) package.
 
 This option is particularly useful when your application has a long setup phase that is not of interest, followed by a solving, running, or execution phase that is.
 
 ### Only Trace Main Process
-This optional setting is enabled by default to prevent clutter in the CodeGlass UI. When Julia performs tasks such as package precompilation, it starts new Julia instances for each package, and CodeGlass profiles those by default.
+This optional setting is enabled by default to prevent clutter in the CodeGlass Client. When Julia performs tasks such as package precompilation, it starts new Julia instances for each package, and CodeGlass profiles those by default.
 
 Profiling these precompilation processes can slow them down and result in a very long list of instances. This is generally undesirable, so CodeGlass profiles only the main process by default.
 
@@ -58,12 +58,12 @@ Enable this option only when actively investigating a memory leak.
 Garbage collection events are still recorded when this option is disabled; however, you cannot see which objects were freed during a GC cycle.
 :::
 
-### Disable Realtime Renderers
+### Enable Realtime Renderers
 Realtime renderers are an experimental feature that provide a visual representation of code execution flow.
 
-When this setting is enabled, CodeGlass skips the processing required to generate these views, which can result in a noticeable performance improvement.
+When this setting is enabled, CodeGlass enables the processing required to generate these views, which can result in a noticeable performance impact.
 
-This option should be disabled only when you want to use the experimental views to gain insight into your application’s execution flow.
+This option should be enabled only when you want to use the experimental views to gain insight into your application’s execution flow.
 
 ### Julia Profile Preset Type
 This is one of the most important settings to set correctly, and also has to most impact on performance. You can read more about these presets [here](../../languages/Julia/codeglass-julia#julia-and-inlining).
@@ -98,7 +98,7 @@ Functions with high **Exclusive Call Durations** are typically good candidates f
 For functions with a high number of **Total Calls**, examine where they are [called from](../../views/app-instance/codemember#called-from) and determine whether those calls can be reduced.
 This is generally only worthwhile if the function also has a reasonably high **Exclusive Call Duration**, otherwise the optimization effort may not yield measurable benefits.
 
-When you identify a function of interest, double-click it to open the [code member](../../views/app-instance/codemember) view, which provides insight into what the function actually executed.
+When you identify a function of interest, double-click it to open the [*code member*](../../views/app-instance/codemember) view, which provides insight into what the function actually executed.
 
 :::info
 If you are unsure where to begin, consult the [advanced How To](../../category/advanced) section. It is a work in progress and does not yet cover every topic.
@@ -121,7 +121,7 @@ Functions with high **Exclusive Call Durations** are typically good candidates f
 For functions with a high number of **Total Calls**, examine where they are [called from](../../views/app-instance/codemember#called-from) and determine whether those calls can be reduced.
 This is generally only worthwhile if the function also has a reasonably high **Exclusive Call Duration**, otherwise the optimization effort may not yield measurable benefits.
 
-When you identify a function of interest, double-click it to open the [code member](../../views/app-instance/codemember) view, which provides insight into what the function actually executed.
+When you identify a function of interest, double-click it to open the [*code member*](../../views/app-instance/codemember) view, which provides insight into what the function actually executed.
 
 :::info
 If you are unsure where to begin, consult the [advanced How To](../../category/advanced) section. It is a work in progress and does not yet cover every topic.
